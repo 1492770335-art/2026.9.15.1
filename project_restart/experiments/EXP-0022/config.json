@@ -1,0 +1,22 @@
+{
+  "exp_id": "EXP-0022",
+  "name": "TC-33 提交前验收：Gate S0（冻结+20日工程回归）+ Gate S1（0-15 重训→16-19 回顾性前推）",
+  "created": "2026-11-09T14:40:00+08:00",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "s0": {
+    "frozen_recipe": "y0/y1=MarketGRU K16 MKT-v1 seed42/43/44 等权；y2=非Market K16 GRU seed42/43/44 等权（9 网络，固定路由/权重）",
+    "freeze_manifest": "reports/FREEZE_S0_MANIFEST.json（24 个 pth SHA）",
+    "engineering_regression": "20 日官方流式：无 NaN/Inf、每模型每日 reset、有限输出；逐日 21.4-22.9s；峰值显存 allocated 213.6MB/reserved 228.6MB/nvidia-smi 403MB；20 日 in-sample pooled 0.3457（仅诊断）",
+    "scoring": "统一官方口径 Score=round(0.2·raw_c0+0.3·raw_c1+0.5·raw_c2,4)（R0 已核验）"
+  },
+  "s1": {
+    "split": {"inner_fit": [0..11], "inner_stop": [12,13,14,15], "full_fit": [0..15], "outer_val": [16,17,18,19]},
+    "models": "9 网络（Market y0/y1 × seed42/43/44 = 6；非Market K16 y2 × seed42/43/44 = 3），K16 GRU128，MKT-v1 冻结，同超参/新内部早停",
+    "eval": "date16-19 仅一次官方评估，不参与选 E/调配方"
+  },
+  "declaration": "date16-19 曾在历史研究暴露，本次为回顾性时间前推开发检查，非真正未见隐藏测试",
+  "boundaries": "仅 S0+S1；不启动 0-19 全量重训（S2）；不追加类别/窗口/种子/队列；不覆盖 EXP-0015~0021；不干预外部进程",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "metric": "官方 Evaluator（cuda 流式）",
+  "device": "cuda:0"
+}

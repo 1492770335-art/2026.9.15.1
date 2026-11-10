@@ -1,0 +1,14 @@
+{
+  "exp_id": "EXP-0016",
+  "name": "EXP-0007-NP：新协议 GRU 窗口消融 K∈{16,64}，seed42，Fold A/B；K100 参照=EXP-0015（0.2228/0.2530）",
+  "created": "2026-11-08T17:45:00+08:00",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "single_variable": "窗口长度 K（其余与 strong-GRU/TC-27 完全一致：hidden128/lr1e-4/wd1e-4/batch1024/clip1.0/seed42/特征/预处理/上限30ep/eval_every2/patience4）",
+  "protocol": "同 TC-27 内部早停：A inner 0-5/stop 6-7/full 0-7/outer 8-11；B inner 0-9/stop 10-11/full 0-11/outer 12-15；各 K 各目标独立选 E 后 full 重训固定 E；外层 val 仅一次评估；复用 train/eval bugfix",
+  "K100_reference": {"A": {"c0": 0.4518, "c1": 0.2850, "c2": 0.0938, "score": 0.2228}, "B": {"c0": 0.4468, "c1": 0.2847, "c2": 0.1564, "score": 0.2530}},
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "frozen_ref": "EXP-0005/0006/0006C/0015 产物不覆盖（FREEZE_TC27_MANIFEST.json 已存 SHA）",
+  "boundaries": "仅 K16/K64 seed42 双折；不启动 EXP-0008/9/10/14、双头 GRU、额外 seed、自动队列",
+  "metric": "官方 Evaluator（cuda 流式）pooled+逐日+date8诊断；批量推理交叉核验",
+  "device": "cuda:0"
+}

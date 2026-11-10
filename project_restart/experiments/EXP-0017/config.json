@@ -1,0 +1,14 @@
+{
+  "exp_id": "EXP-0017",
+  "name": "K16 vs K100 新协议配对多种子复验：seed{43,44} × K{16,100} × Fold{A,B}",
+  "created": "2026-11-08T22:30:00+08:00",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由；推荐 high 执行 / max 评审，实际思考档位由 Harness 决定，如实记录路由模型）",
+  "matrix": "seed42 参照：K100=EXP-0015（A0.2228/B0.2530）、K16=EXP-0016（A0.2390/B0.2612）；seed43/44 本批新协议重训 K100 与 K16（各 3 目标 × 双折）",
+  "protocol": "同 TC-27：A inner 0-5/stop 6-7/full 0-7/outer 8-11；B inner 0-9/stop 10-11/full 0-11/outer 12-15；每 seed×K×目标独立选 E 后 full 固定 E 重训；外层仅一次评估；train/eval bugfix",
+  "single_variable": "K∈{16,100}，seed 为重复因子；其余（GRU128/lr1e-4/wd1e-4/batch1024/clip1/cap30/eval_every2/patience4/特征/预处理）与 K100 一致",
+  "boundaries": "不训练 K64、不增窗口、不启动 EXP-0008/9/10/14、双头 GRU、额外 seed、自动队列",
+  "frozen_ref": "EXP-0015/0016/0006/0006C/0005 不覆盖；旧 EXP-0006 seed43/44 K100 为旧协议，不作配对对照",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "metric": "官方 Evaluator（cuda 流式）pooled+逐日+date8诊断；批量交叉核验；配对 Δ=Score(K16)−Score(K100)",
+  "device": "cuda:0"
+}

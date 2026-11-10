@@ -1,0 +1,14 @@
+{
+  "exp_id": "EXP-0008",
+  "name": "市场状态消融：当前 tick 横截面 mean/std 拼接（100→300），对照 strong-MLP",
+  "created": "2026-11-07T15:20:00+08:00",
+  "hypothesis": "同 tick 50 股票的市场公共状态（每特征横截面均值/标准差）提供股票外的增量信息（TC-09；Jane Street 8th 采用市场均值）",
+  "single_variable": "是否拼接当前 tick 市场 mean/std（其余与 strong-MLP 完全一致）",
+  "legality": "只使用当前 tick 全部 50 股票（官方输入本身包含），无未来信息；std 采用 ddof=1 与 torch.std 默认一致",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "train_dates": {"foldA": [0,1,2,3,4,5,6,7], "foldB": [0,1,2,3,4,5,6,7,8,9,10,11]},
+  "val_dates": {"foldA": [8,9,10,11], "foldB": [12,13,14,15]},
+  "acceptance": "两折方向一致且超过 strong-MLP 的 seed 噪声（EXP-0006）",
+  "metric": "官方 Evaluator（cuda 流式）",
+  "device": "cuda:0"
+}

@@ -1,0 +1,13 @@
+{
+  "exp_id": "EXP-0004",
+  "name": "STRONG-MLP：同宽 128 强配方（shuffle、lr1e-3、早停每目标自身 Pearson）",
+  "created": "2026-11-07T14:30:00+08:00",
+  "recipe": "SiLU MLP 100->128->128->1；AdamW lr=1e-3 wd=1e-4；batch 8192；shuffle=True；epochs<=40；eval_every=2；patience=6（按验证集自身目标 pooled Pearson 选 checkpoint，fold B 独立确认）",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "train_dates": {"foldA": [0,1,2,3,4,5,6,7], "foldB": [0,1,2,3,4,5,6,7,8,9,10,11]},
+  "val_dates": {"foldA": [8,9,10,11], "foldB": [12,13,14,15]},
+  "seed": 42,
+  "note_bugfix": "v1 早停选择分用了三标签混合加权（广播），v2 修正为自身目标 pooled Pearson 后重跑；v1 结果保留于 results_raw_v1.json 记录",
+  "metric": "官方 Evaluator（cuda:0 流式）",
+  "device": "cuda:0"
+}

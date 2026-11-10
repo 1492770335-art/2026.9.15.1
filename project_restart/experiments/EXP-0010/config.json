@@ -1,0 +1,14 @@
+{
+  "exp_id": "EXP-0010",
+  "name": "y2 目标损失消融：MSE + α·(1−batch Pearson)（α∈{0,0.1,0.3,1.0}），宿主 strong-MLP（TC-15 前置，因 c2 瓶颈已确认）",
+  "created": "2026-11-07T18:00:00+08:00",
+  "hypothesis": "y2 线性信号最弱（max corr 0.072）且权重 0.5；纯 MSE 在 2–4 epoch 即见顶。相关系数导向损失直接优化 pooled Pearson 的目标成分，可能延续 y2 的有效训练",
+  "single_variable": "α（损失函数），仅作用于 y2；y0/y1 保持 MSE；早停选择目标不变（自身 pooled Pearson）",
+  "protocol": "fold A 网格选 α → fold B 独立确认；α=0 在同一代码路径下重跑作为内部对照",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "train_dates": {"foldA": [0,1,2,3,4,5,6,7], "foldB": [0,1,2,3,4,5,6,7,8,9,10,11]},
+  "val_dates": {"foldA": [8,9,10,11], "foldB": [12,13,14,15]},
+  "acceptance": "foldB c2 与总 Score 同向改善超过 noise（EXP-0006），且两折 c0/c1 不明显退化",
+  "metric": "官方 Evaluator（cuda 流式）",
+  "device": "cuda:0"
+}

@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0014",
+  "name": "delta-head MLP：监督 Δy_t=y_t−y_{t−1}（日初 y_{−1}=0），推理 ŷ_t=ŷ_{t−1}+Δ̂_t 自回归重建（EXP-0013 升级版，宿主 strong-MLP）",
+  "created": "2026-11-07T20:10:00+08:00",
+  "hypothesis": "分析证据：corr(Δy_t, f000_t)≈−0.70~−0.72 对三个目标一致，而水平 corr 仅 0.07~0.17；标签≈日内持续性+特征驱动增量。水平 MSE 训练无法学习持续性结构（无标签在线），delta 监督+自回归重建可重建水平序列",
+  "single_variable": "训练监督目标（水平 vs 差分）与推理重建方式，其余与 strong-MLP 一致（hidden128、lr1e-3、shuffle、早停、seed42）",
+  "legality": "Δy_t 由当前特征 f_t 与自身上一步预测 ŷ_{t−1} 重建；无未来信息；日初 reset 置零（官方 Evaluator 每日调用 reset）",
+  "inference": "predict(x): d=net(x); prev=prev+d; return prev；reset(): prev=None",
+  "early_stop": "验证集上用重建水平序列的自身目标 pooled Pearson 选择 checkpoint（与官方口径一致）",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "train_dates": {"foldA": [0,1,2,3,4,5,6,7], "foldB": [0,1,2,3,4,5,6,7,8,9,10,11]},
+  "val_dates": {"foldA": [8,9,10,11], "foldB": [12,13,14,15]},
+  "acceptance": "两折 pooled Score 显著超过 strong-MLP/GRU（>2σ 且逐日一致），无单日主导",
+  "metric": "官方 Evaluator（cuda 流式）",
+  "device": "cuda:0"
+}

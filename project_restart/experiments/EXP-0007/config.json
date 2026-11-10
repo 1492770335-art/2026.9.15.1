@@ -1,0 +1,13 @@
+{
+  "exp_id": "EXP-0007",
+  "name": "GRU 窗口消融：K ∈ {16, 64}（K=100 参照 = EXP-0005）",
+  "created": "2026-11-07T15:20:00+08:00",
+  "hypothesis": "窗口长度影响可用历史信息与过拟合风险；100 未必最优（TC-06/TC-10）",
+  "single_variable": "window K（其余与 strong-GRU 完全一致：hidden128、lr1e-4、shuffle、早停、seed42）",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "train_dates": {"foldA": [0,1,2,3,4,5,6,7], "foldB": [0,1,2,3,4,5,6,7,8,9,10,11]},
+  "val_dates": {"foldA": [8,9,10,11], "foldB": [12,13,14,15]},
+  "acceptance": "需先以 EXP-0006 的 seed 方差确定噪声下限；两折方向一致且超过 2σ 才晋级",
+  "metric": "官方 Evaluator（cuda 流式）pooled + 逐日",
+  "device": "cuda:0"
+}

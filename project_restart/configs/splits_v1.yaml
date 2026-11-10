@@ -1,0 +1,28 @@
+# 验证切分配置 v1 —— 候选（冻结前必须完成 horizon/gap 敏感性实验）
+# 冻结条件见 Notion TC-03：gap=0/1 敏感性不出现跨日泄漏证据后方可正式冻结。
+folds:
+  A:
+    train_dates: [0, 1, 2, 3, 4, 5, 6, 7]
+    val_dates: [8, 9, 10, 11]
+  B:
+    train_dates: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    val_dates: [12, 13, 14, 15]
+# 16-19 历史项目已多次暴露：仅冻结候选后做一次性附加检查，不算盲测。
+extra_check:
+  train_dates: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  check_dates: [16, 17, 18, 19]
+  exposed_in_history: true
+# horizon 敏感性（标签未来窗口未知，官方材料未声明）
+horizon_sensitivity:
+  gap0: {train_dates: [0, 1, 2, 3, 4, 5, 6, 7], val_dates: [8, 9, 10, 11]}
+  gap1: {train_dates: [0, 1, 2, 3, 4, 5, 6], val_dates: [8, 9, 10, 11]}
+metric:
+  pooled_pearson: true       # 严禁用每日 Pearson 算术平均代替
+  keep_raw_and_official: true
+  weights: [0.2, 0.3, 0.5]
+  rounding: official_4dp_banker
+pipeline_rules:
+  - 标准化/特征选择/融合权重只能由当前 fold train 拟合
+  - 验证标签不得进入任何训练相关流程
+  - 每日 reset；序列模型禁止跨日持有状态
+  - 横截面聚合只能使用当前 tick 或更早特征

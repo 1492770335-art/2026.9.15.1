@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0021",
+  "name": "TC-32 Gate H1：Market y0/y1 seed43/44 配对复验 + 三 seed 市场路由（y0/y1=Market 42/43/44 等权，y2=K16 非Market 42/43/44 等权）",
+  "created": "2026-11-09T12:50:00+08:00",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "r0_audit": "官方 Score 0.2893 已复核：score=round(unrounded_corr@w,4)，显示值各自舍入；无异常；metrics.py 舍入顺序已修复对齐官方",
+  "train": "仅 8 个 target-fold：seed{43,44} × fold{A,B} × label{0,1}，K16-GRU+MKT-v1(300维)，新内部早停；不训练 Market y2",
+  "routing_candidate": {"y0": "Market seeds 42/43/44 等权", "y1": "Market seeds 42/43/44 等权", "y2": "K16 非Market seeds 42/43/44 等权（EXP-0016/0017/0018，不变）"},
+  "control": "EXP-0018 非Market K16 三 seed 全目标融合：A 0.2495 / B 0.2691",
+  "single_variable": "y0/y1 是否用 Market 三 seed 等权（y2 不变）",
+  "protocol": "同 TC-27：A inner 0-5/stop 6-7/full 0-7/outer 8-11；B inner 0-9/stop 10-11/full 0-11/outer 12-15；外层仅一次评估",
+  "boundaries": "不训 Market y2、不改变 MKT-v1、不启动类别/双头/delta/其他种子/窗口/队列；不覆盖 EXP-0015~0020；不干预外部论文进程",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "metric": "官方 Evaluator（cuda 流式）",
+  "device": "cuda:0"
+}

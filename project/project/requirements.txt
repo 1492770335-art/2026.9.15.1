@@ -1,0 +1,5 @@
+# Python 3.11.15
+numpy>=2.4.6
+polars>=1.40.1
+torch>=2.11.0
+tqdm>=4.67.3

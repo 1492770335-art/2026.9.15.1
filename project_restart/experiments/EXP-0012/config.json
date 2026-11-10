@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0012",
+  "name": "OOF 融合预注册：strong-MLP 与 strong-GRU 的验证折预测线性/正则化融合（TC-11 前置）",
+  "created": "2026-11-07T19:30:00+08:00",
+  "hypothesis": "MLP（截面）与 GRU（时序）误差结构可能互补；在各自训练折外 OOF 预测上拟合融合权重，可低风险叠加两者信号",
+  "protocol": {
+    "step1": "在 fold A/B 各自 train 折训练两模型，生成各自 val 折预测（val 标签不参与训练）",
+    "step2": "fold A val 上拟合融合权重（线性 + 可选 ridge 约束）→ 得到候选权重",
+    "step3": "fold B val 上冻结权重验证；若 B 也正增益且 A/B 方向一致才晋级",
+    "constraints": "融合权重只能由对应 fold 的 val 拟合；禁止用 16-19 调权"
+  },
+  "acceptance": "两折 pooled Score 均不低于两者中较优单模型，且超出 seed 噪声（EXP-0006）",
+  "prerequisites": ["EXP-0006 噪声下限", "EXP-0007/0008/0009 消融结论（融合成员确定后再运行）"],
+  "metric": "官方 Evaluator",
+  "device": "cuda:0"
+}

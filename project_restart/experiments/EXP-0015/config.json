@@ -1,0 +1,18 @@
+{
+  "exp_id": "EXP-0015",
+  "name": "TC-27：内部早停协议实现 + 新协议 K100 strong-GRU seed42 基线（唯一变量：epoch 选择口径）",
+  "created": "2026-11-08T13:00:00+08:00",
+  "actual_model_used": "deepseek-v4-pro（本轮 Harness 路由已切换为 v4-pro，如实记录）",
+  "protocol": {
+    "A": {"inner_train": [0,1,2,3,4,5], "inner_stop": [6,7], "full_train": [0,1,2,3,4,5,6,7], "outer_val": [8,9,10,11]},
+    "B": {"inner_train": [0,1,2,3,4,5,6,7,8,9], "inner_stop": [10,11], "full_train": [0,1,2,3,4,5,6,7,8,9,10,11], "outer_val": [12,13,14,15]}
+  },
+  "procedure": "phase1: inner_train 训练，每 2 epoch 用 inner_stop 自身目标 pooled Pearson 选 best E（patience 4, cap 30）——外层 val 完全不可见；phase2: full_train 重训恰好 E epoch（seed42，shuffle rng=seed+epoch 与 phase1 一致），外层 val 仅一次评估",
+  "identical_to_EXP0005": ["GRU hidden=128", "window=100", "lr=1e-4", "weight_decay=1e-4", "batch=1024", "clip=1.0", "seed=42", "官方 Evaluator 流式"],
+  "differs_from_EXP0005": "仅 epoch 选择口径：旧=外层 val 选 epoch；新=内层 stop_i 选 epoch 后固定 E 重训",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "frozen_artifacts": "EXP-0005/0006/0006C 全部 184 文件 SHA 清单：reports/FREEZE_TC27_MANIFEST.json",
+  "boundaries": "不训练 K16/K64；不启动 EXP-0008/9/10/14、双头 GRU、自动队列",
+  "metric": "官方 Evaluator（cuda 流式）pooled + 逐日；批量推理交叉核验",
+  "device": "cuda:0"
+}

@@ -1,0 +1,13 @@
+{
+  "exp_id": "EXP-0002",
+  "name": "BASE-MLP 官方原样 SiLU MLP 100->128->128->1（A/B 双折 + gap1 敏感性）",
+  "created": "2026-11-07T13:40:00+08:00",
+  "model": "official example MLP (example/network.py MLP class, hidden=128)",
+  "recipe": "example/fit.py 原样：AdamW lr=1e-4 wd=1e-4，MSE，grad clip 1.0，epochs=2，batch 8192，shuffle=False，seed 42",
+  "deviation_from_example": "仅按日期严格切分 train/val（示例无切分）；其余超参一致",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "train_dates": {"foldA": [0,1,2,3,4,5,6,7], "foldB": [0,1,2,3,4,5,6,7,8,9,10,11], "gap1": [0,1,2,3,4,5,6]},
+  "val_dates": {"foldA": [8,9,10,11], "foldB": [12,13,14,15], "gap1": [8,9,10,11]},
+  "metric": "官方 Evaluator（cuda:0 流式）pooled Pearson + 逐日",
+  "device": "cuda:0 (RTX 3060 Laptop 6GB)"
+}

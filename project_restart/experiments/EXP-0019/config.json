@@ -1,0 +1,15 @@
+{
+  "exp_id": "EXP-0019",
+  "name": "TC-30：K16-GRU + 市场状态(MKT-v1) 单因素消融，seed42，Fold A/B",
+  "created": "2026-11-09T10:20:00+08:00",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "control": "EXP-0016 K16 seed42：A 0.2390 / B 0.2612（同新协议、同超参、仅无市场特征）",
+  "single_variable": "是否拼接预注册市场特征 MKT-v1（每特征当前 tick 横截面 mean+std，100→300 维）",
+  "protocol": "同 TC-27 内部早停：A inner 0-5/stop 6-7/full 0-7/outer 8-11；B inner 0-9/stop 10-11/full 0-11/outer 12-15；各目标独立选 E 后 full 固定 E 重训；外层仅一次评估",
+  "hyperparams": "GRU128/lr1e-4/wd1e-4/batch1024/clip1/seed42/window16/cap30/eval_every2/patience4",
+  "m0_audit": "reports/TC30_M0_AUDIT.md；test_market_consistency.py 4/4 PASS",
+  "boundaries": "不叠加类别 one-hot/embedding、不训练其他 seed、不启动双头/delta/自动队列、不干预外部论文进程",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "metric": "官方 Evaluator（cuda 流式）pooled+逐日+date8诊断",
+  "device": "cuda:0"
+}

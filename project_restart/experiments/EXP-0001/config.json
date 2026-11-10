@@ -1,0 +1,33 @@
+{
+  "exp_id": "EXP-0001",
+  "name": "BASE-RIDGE 基线（Fold A/B + horizon gap 敏感性 + lam 网格）",
+  "created": "2026-11-07T13:26:00+08:00",
+  "model": "Ridge (closed-form, intercept, per-target independent)",
+  "actual_model_used": "deepseek-flash (Harness 实际路由；无独立 Pro 审核进程)",
+  "objective": "在冻结的 A/B 双折上建立可复现正则线性基线；同跑 gap=0/1 标签跨日泄漏敏感性",
+  "hypothesis": "标准化的 100 维特征含线性预测信号；若 gap1 分数显著低于 gap0，说明跨日标签交叠",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "archive_sha256": "299bb831c7ff57f719062fc7e0f940369c85bd2ce8ab846bb9dd5cf44f972042",
+  "train_dates": {"foldA": [0,1,2,3,4,5,6,7], "foldB": [0,1,2,3,4,5,6,7,8,9,10,11], "gap0": [0,1,2,3,4,5,6,7], "gap1": [0,1,2,3,4,5,6]},
+  "val_dates": {"foldA": [8,9,10,11], "foldB": [12,13,14,15], "gap0": [8,9,10,11], "gap1": [8,9,10,11]},
+  "features": "f000..f099 (float32, 官方 evaluator 同口径), 不再标准化",
+  "labels": ["y0", "y1", "y2"],
+  "hyperparams": {"lam": [1.0, 10.0, 100.0, 1000.0], "pre_registered_default_lam": 100.0, "intercept": true},
+  "seed": null,
+  "metric": "pooled Pearson over val dates; raw + official 4dp rounding (先 round corr 再加权)",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.5.4",
+    "polars": "2.1.0",
+    "torch": "2.14.1+cu126",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU 6GB",
+    "ram_gb": 15.4,
+    "disk_free_gb": 84.8,
+    "os": "Windows"
+  },
+  "scripts": {
+    "ridge.py": "src/models/ridge.py",
+    "metrics.py": "src/eval/metrics.py"
+  },
+  "git": "未安装 git（BLOCKED，非阻断）；以文件 SHA256 证据链替代版本控制"
+}

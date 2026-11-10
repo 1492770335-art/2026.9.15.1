@@ -1,0 +1,14 @@
+{
+  "exp_id": "EXP-0009",
+  "name": "类别编码消融：f083–f099 one-hot（17×3）替换原始浮点（100→134），对照 strong-MLP",
+  "created": "2026-11-07T15:20:00+08:00",
+  "hypothesis": "离散特征以浮点数值直接线性叠加可能引入虚假序数关系；one-hot 显式化 0/1/2 语义（TC-07）",
+  "single_variable": "类别编码方式（其余与 strong-MLP 完全一致）",
+  "note": "训练用 numpy 构造 one-hot；提交网络 predict 内 F.one_hot(x[:,83:].long()) 与训练完全一致；离散列官方以 float32 传入，值恰为 0/1/2",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "train_dates": {"foldA": [0,1,2,3,4,5,6,7], "foldB": [0,1,2,3,4,5,6,7,8,9,10,11]},
+  "val_dates": {"foldA": [8,9,10,11], "foldB": [12,13,14,15]},
+  "acceptance": "两折方向一致且超过 strong-MLP 的 seed 噪声（EXP-0006）",
+  "metric": "官方 Evaluator（cuda 流式）",
+  "device": "cuda:0"
+}

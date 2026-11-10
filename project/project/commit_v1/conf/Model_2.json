@@ -1,0 +1,15 @@
+{
+  "model": "GRU",
+  "name": "Model_2",
+  "data": "../data/public.parquet",
+  "output": "output",
+  "label": 2,
+  "hidden": 128,
+  "window": 100,
+  "epochs": 2,
+  "batch_size": 1024,
+  "lr": 1e-5,
+  "device": "cuda:0",
+  "num_threads": 4,
+  "seed": 42
+}
