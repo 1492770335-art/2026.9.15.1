@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "name": "local_conv params == 500 (400 w + 100 b)",
+      "pass": true
+    },
+    {
+      "name": "local_proj params == 3232 (3200 w + 32 b)",
+      "pass": true
+    },
+    {
+      "name": "head params == 161 (160 w + 1 b)",
+      "pass": true
+    },
+    {
+      "name": "gru params == 88320",
+      "pass": true
+    },
+    {
+      "name": "total params == 92213 (baseline 88449, delta +3764)",
+      "pass": true
+    },
+    {
+      "name": "offline/streaming alignment (max abs diff <= 1e-5)",
+      "pass": true
+    },
+    {
+      "name": "causal: future tick3 perturb does not change ticks 0..2",
+      "pass": true
+    },
+    {
+      "name": "causal: tick3 perturb changes tick3 itself",
+      "pass": true
+    },
+    {
+      "name": "day-first tick finite",
+      "pass": true
+    },
+    {
+      "name": "window uses only within-day (tid<=actual tick)",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "param_count": {
+    "gru": 88320,
+    "local_conv": 500,
+    "local_proj": 3232,
+    "head": 161,
+    "total": 92213
+  },
+  "offline_streaming_max_abs": 0.0
+}

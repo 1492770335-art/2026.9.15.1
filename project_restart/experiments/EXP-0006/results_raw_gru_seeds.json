@@ -1,0 +1,315 @@
+{
+  "gru_A_s43": {
+    "tag": "gru_A_s43",
+    "fold": "A",
+    "seed": 43,
+    "train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "val": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "pooled": {
+      "corr0": 0.4528,
+      "corr1": 0.2909,
+      "corr2": 0.0876,
+      "score": 0.2216
+    },
+    "daily": {
+      "8": {
+        "corr0": 0.439,
+        "corr1": 0.2701,
+        "corr2": 0.0791,
+        "score": 0.2084
+      },
+      "9": {
+        "corr0": 0.4566,
+        "corr1": 0.2811,
+        "corr2": 0.0562,
+        "score": 0.2038
+      },
+      "10": {
+        "corr0": 0.4599,
+        "corr1": 0.3136,
+        "corr2": 0.1018,
+        "score": 0.237
+      },
+      "11": {
+        "corr0": 0.4581,
+        "corr1": 0.3039,
+        "corr2": 0.1046,
+        "score": 0.2351
+      }
+    },
+    "extra": {
+      "pooled_no_date8": {
+        "corr0": 0.4578,
+        "corr1": 0.2979,
+        "corr2": 0.0866,
+        "score": 0.2242
+      }
+    },
+    "notes": {
+      "Model_0": {
+        "reused": true,
+        "sha256": "29275b923ecc6b1fb855fb10052a022ff8a2578c96dc91892a615656bcac0ca2"
+      },
+      "Model_1": {
+        "reused": false,
+        "best_epoch": 2,
+        "sha256": "a282cac81b03bf4b21f580788f0ee5cff7b1e7f50542949a93d8f0e50762d0c9"
+      },
+      "Model_2": {
+        "reused": false,
+        "best_epoch": 2,
+        "sha256": "fd9ea6ec7d4fbfd880898d45f86218d64a726f15be437863b76e6c7e789b846b"
+      }
+    },
+    "elapsed_sec": 3116.3,
+    "peak_vram_mb": 4133.2
+  },
+  "gru_A_s44": {
+    "tag": "gru_A_s44",
+    "fold": "A",
+    "seed": 44,
+    "train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "val": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "pooled": {
+      "corr0": 0.4542,
+      "corr1": 0.293,
+      "corr2": 0.0951,
+      "score": 0.2263
+    },
+    "daily": {
+      "8": {
+        "corr0": 0.441,
+        "corr1": 0.2693,
+        "corr2": 0.0781,
+        "score": 0.208
+      },
+      "9": {
+        "corr0": 0.4589,
+        "corr1": 0.2831,
+        "corr2": 0.0854,
+        "score": 0.2194
+      },
+      "10": {
+        "corr0": 0.4594,
+        "corr1": 0.2982,
+        "corr2": 0.0914,
+        "score": 0.2271
+      },
+      "11": {
+        "corr0": 0.4596,
+        "corr1": 0.3247,
+        "corr2": 0.1265,
+        "score": 0.2526
+      }
+    },
+    "extra": {
+      "pooled_no_date8": {
+        "corr0": 0.459,
+        "corr1": 0.3007,
+        "corr2": 0.1006,
+        "score": 0.2323
+      }
+    },
+    "notes": {
+      "Model_0": {
+        "reused": false,
+        "best_epoch": 4,
+        "sha256": "a9711b2bdcbc56b64a824455e53192813958a2552f264757b766198ef4995906"
+      },
+      "Model_1": {
+        "reused": false,
+        "best_epoch": 2,
+        "sha256": "4cccd8386ac1f51937bccf7a7decf1d841f210fc0391306733db8c5ffffbf501"
+      },
+      "Model_2": {
+        "reused": false,
+        "best_epoch": 2,
+        "sha256": "30b3c8fc0a71de86c36378d685d02e76b4d6b6447883d9c81a75d8456703cde7"
+      }
+    },
+    "elapsed_sec": 5125.2,
+    "peak_vram_mb": 4133.2
+  },
+  "gru_B_s43": {
+    "tag": "gru_B_s43",
+    "fold": "B",
+    "seed": 43,
+    "train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "val": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "pooled": {
+      "corr0": 0.446,
+      "corr1": 0.2938,
+      "corr2": 0.1271,
+      "score": 0.2409
+    },
+    "daily": {
+      "12": {
+        "corr0": 0.4652,
+        "corr1": 0.3158,
+        "corr2": 0.1286,
+        "score": 0.2521
+      },
+      "13": {
+        "corr0": 0.4327,
+        "corr1": 0.2964,
+        "corr2": 0.138,
+        "score": 0.2445
+      },
+      "14": {
+        "corr0": 0.4408,
+        "corr1": 0.273,
+        "corr2": 0.1175,
+        "score": 0.2288
+      },
+      "15": {
+        "corr0": 0.453,
+        "corr1": 0.303,
+        "corr2": 0.1552,
+        "score": 0.2591
+      }
+    },
+    "extra": {},
+    "notes": {
+      "Model_0": {
+        "reused": false,
+        "best_epoch": 4,
+        "sha256": "eaca69fd3ca1443f965b636c4f9d3c322ea2dafe44ca8faa26e82e2d179cc593"
+      },
+      "Model_1": {
+        "reused": false,
+        "best_epoch": 2,
+        "sha256": "17a68560b24901304168fedac595df2262a1bd6684a5c5882980ba2afe96a82c"
+      },
+      "Model_2": {
+        "reused": false,
+        "best_epoch": 2,
+        "sha256": "cb59091bf7e3b152a695f19f1f261dd2f985e2f82d8d452c09d55c5811fe2b58"
+      }
+    },
+    "elapsed_sec": 7774.7,
+    "peak_vram_mb": 4109.2
+  },
+  "gru_B_s44": {
+    "tag": "gru_B_s44",
+    "fold": "B",
+    "seed": 44,
+    "train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "val": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "pooled": {
+      "corr0": 0.4495,
+      "corr1": 0.2945,
+      "corr2": 0.1462,
+      "score": 0.2513
+    },
+    "daily": {
+      "12": {
+        "corr0": 0.4672,
+        "corr1": 0.3213,
+        "corr2": 0.1449,
+        "score": 0.2623
+      },
+      "13": {
+        "corr0": 0.4374,
+        "corr1": 0.2858,
+        "corr2": 0.143,
+        "score": 0.2447
+      },
+      "14": {
+        "corr0": 0.4449,
+        "corr1": 0.2802,
+        "corr2": 0.1381,
+        "score": 0.2421
+      },
+      "15": {
+        "corr0": 0.4544,
+        "corr1": 0.3002,
+        "corr2": 0.1817,
+        "score": 0.2718
+      }
+    },
+    "extra": {},
+    "notes": {
+      "Model_0": {
+        "reused": false,
+        "best_epoch": 4,
+        "sha256": "7fbda5a7e7dcd3900b64998af64fb8297514ce458f892b27b874ef89f4eb1183"
+      },
+      "Model_1": {
+        "reused": false,
+        "best_epoch": 2,
+        "sha256": "45bc1a4fb688a7fe07d13d0b04203caef733018f400c2859b4f7f1ac3c835395"
+      },
+      "Model_2": {
+        "reused": false,
+        "best_epoch": 2,
+        "sha256": "b6d32cdd2f560d57322c06176a538e8e15289d314515a6e56248a9eb3fe36ebb"
+      }
+    },
+    "elapsed_sec": 7765.5,
+    "peak_vram_mb": 4109.2
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0029",
+  "checks": {
+    "only_y2_seed42_fold_AB": true,
+    "four_training_phases": true,
+    "tc27_inner_earlystop": true,
+    "padding_preflight_10_10": true,
+    "onehot_train_stream_same_stage": true,
+    "negative_result_preserved": true,
+    "no_embedding_subset_seed_search": true,
+    "frozen_EXP0015_0028_untouched": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "padding 全零(134维) ≠ 真实 state0([1,0,0]) 已由 10/10 专项测试确认；训练/流式同用 build_onehot17；两折 Δc2 未达 +0.008（A≈0、B 负），按预注册 HOLD，不搜索 embedding/子集/种子/结构。"
+}

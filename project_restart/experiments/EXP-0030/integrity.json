@@ -1,0 +1,17 @@
+{
+  "exp_id": "EXP-0030",
+  "checks": {
+    "zero_training": true,
+    "baseline_sha_and_raw_c2_verified": true,
+    "k4_architecture_frozen": true,
+    "causal_no_future_verified": true,
+    "offline_streaming_alignment_pass": true,
+    "k4_tests_10_10": true,
+    "param_count_exact": true,
+    "no_k2_k8_width_activation_search": true,
+    "frozen_EXP0015_0029_untouched": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "K16+K4 局部分支：DepthwiseConv1d(100,100,k4,g100)+ReLU+Linear(100,32)，与 GRU 隐状态拼接 Linear(160,1)；参数 92213（基线 88449，+3764）；离线/流式对齐 max diff=0；因果隔离、日初有限性、50 股隔离均通过。M1 已预注册，未训练。"
+}

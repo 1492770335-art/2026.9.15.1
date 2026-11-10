@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0016",
+  "checks": {
+    "single_variable_window_K": true,
+    "identical_structure_hparams_seed42": true,
+    "new_inner_earlystop_protocol": true,
+    "outer_val_eval_only": true,
+    "train_eval_bugfix": true,
+    "window_alignment_tests_9_9": true,
+    "official_evaluator_used": true,
+    "batched_streaming_consistent": true,
+    "no_other_experiments": true,
+    "frozen_artifacts_untouched": true
+  },
+  "notes": "K16/K64 各目标 E 与 K100 相同（A 6/2/2、B 4/2/2），新协议同口径公平比较；K16 的 c2 提升显著（A +0.0317/B +0.0142）。流式延迟约 7s/日（逐 tick 固定开销主导，K 影响小）。"
+}

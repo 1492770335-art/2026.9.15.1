@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0032",
+  "checks": {
+    "zero_training": true,
+    "frozen_prediction_only": true,
+    "per_target_raw_corr_recomputed": true,
+    "complementarity_descriptive": true,
+    "identity_labels_marked": true,
+    "no_fusion_no_weight_search": true,
+    "no_next_hypothesis_pre_registered": true,
+    "missing_oof_declared": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "G0 只读诊断：Market y0/y1 已覆盖 K16（K16 对 Market 残差≈0），y2 候选与冻结 y2 高度冗余且残差反相关；无稳定互补增量信号，缺训练期 cross-fit OOF。结论 INSUFFICIENT_EVIDENCE/NO_TRAIN，不选择新模型假设。"
+}

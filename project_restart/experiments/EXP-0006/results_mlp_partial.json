@@ -1,0 +1,12 @@
+{
+  "exp_id": "EXP-0006",
+  "mlp_seed_variance": {
+    "foldA": {"scores": [0.2163, 0.2162, 0.2190], "seeds": [42, 43, 44], "mean": 0.2172, "std": 0.0013, "range": 0.0028},
+    "foldB": {"scores": [0.2319, 0.2300, 0.2311], "seeds": [42, 43, 44], "mean": 0.2310, "std": 0.0009, "range": 0.0019},
+    "conclusion": "strong-MLP 训练随机性极小（σ≈0.001）；同折同模型对比中 >0.003 的差异可视为显著（2σ+）"
+  },
+  "gru_seed_variance": "运行中（foldA seeds 43/44，seed42=EXP-0005 0.2228）",
+  "threshold_guidance": {
+    "note": "跨折（A vs B）分数差主要来自日期异质性（逐日分数 0.18–0.27），不能仅凭折间差值判显著；同折同模型的多 seed σ 才是训练噪声下限"
+  }
+}

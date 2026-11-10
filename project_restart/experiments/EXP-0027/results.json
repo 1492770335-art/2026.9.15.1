@@ -1,0 +1,30 @@
+{
+  "exp_id": "EXP-0027",
+  "name": "TC-39 Gate C1：y2-only K16-GRU + 固定 ±10 输入 clip（f0-f82）seed42 × Fold A/B",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "single_variable": "f0-f82 是否 clip(x,-10,+10)；f83-f99 不变；输入 100 维不变；梯度裁剪 1.0 不变",
+  "control": "EXP-0016 K16-GRU seed42 y2（raw c2 A 0.125503 / B 0.170568）",
+  "folds": {
+    "A": {"E": 2, "full_steps": 3658, "raw_c2": 0.128463, "control_raw_c2": 0.125503, "delta_c2": 0.002960,
+          "daily": {"8": {"c1": 0.110780, "control": 0.105482, "delta": 0.005297},
+                    "9": {"c1": 0.085954, "control": 0.083431, "delta": 0.002523},
+                    "10": {"c1": 0.140455, "control": 0.140525, "delta": -0.000070},
+                    "11": {"c1": 0.173672, "control": 0.170735, "delta": 0.002937}}},
+    "B": {"E": 2, "full_steps": 5488, "raw_c2": 0.174377, "control_raw_c2": 0.170568, "delta_c2": 0.003809,
+          "daily": {"12": {"c1": 0.183660, "control": 0.172807, "delta": 0.010853},
+                    "13": {"c1": 0.180467, "control": 0.181265, "delta": -0.000798},
+                    "14": {"c1": 0.170379, "control": 0.167064, "delta": 0.003315},
+                    "15": {"c1": 0.183025, "control": 0.184223, "delta": -0.001198}}}
+  },
+  "streaming_batch_consistency": {"A_max_abs": 4.768e-07, "B_max_abs": 4.768e-07, "pass": true},
+  "gate_check": {
+    "foldA_delta_c2_ge_0.008": false,
+    "foldB_delta_c2_ge_0.008": false,
+    "dev_days_nonneg": "5/8 严格非负（A 3/4、B 2/4；day10 为 -0.00007 近似 0）",
+    "no_single_day_dominance": true,
+    "engineering_pass": true
+  },
+  "verdict": "HOLD / 关闭 ±10 clip 假设：两折 Δc2 均正但低于 +0.008 门槛（+0.0030/+0.0038），不 RESEARCH_PASS；不再追加 ±5/±8/±12/±20 阈值搜索",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

@@ -1,0 +1,30 @@
+{
+  "exp_id": "EXP-0003",
+  "status": "completed",
+  "foldA": {
+    "train_dates": [0,1,2,3,4,5,6,7],
+    "val_dates": [8,9,10,11],
+    "pooled_official": {"corr0": 0.3592, "corr1": 0.2305, "corr2": 0.1205, "score": 0.2012}
+  },
+  "foldB": {
+    "train_dates": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "val_dates": [12,13,14,15],
+    "pooled_official": {"corr0": 0.3714, "corr1": 0.242, "corr2": 0.1415, "score": 0.2176}
+  },
+  "gap1": {
+    "train_dates": [0,1,2,3,4,5,6],
+    "val_dates": [8,9,10,11],
+    "pooled_official": {"corr0": 0.3537, "corr1": 0.227, "corr2": 0.1196, "score": 0.1986},
+    "delta_vs_gap0": -0.0026,
+    "confound": "gap1 同时减少 12.5% 训练数据，-0.0026 不能单独归因于泄漏；与 Ridge(+0.0014)/MLP(-0.0034) 合计无一致强泄漏信号"
+  },
+  "comparison": {
+    "foldA": {"ridge": 0.1929, "mlp": 0.1913, "gru": 0.2012},
+    "foldB": {"ridge": 0.2051, "mlp": 0.2105, "gru": 0.2176},
+    "conclusion": "官方原样 GRU 双折全面领先：时序因果窗口信息量 > 纯截面线性/MLP"
+  },
+  "losses_epoch": {"y0": [0.9479, 0.8948], "y1": [1.0439, 1.0194], "y2": [1.0718, 1.0596]},
+  "resources": {"elapsed_sec": {"foldA": 539.2, "foldB": 714.1, "gap1": 477.4}, "peak_vram_mb": 1664.7, "gpu_eval_sec_per_day": 6.9},
+  "artifacts": ["experiments/EXP-0003/commit_gru_foldA/", "experiments/EXP-0003/commit_gru_foldB/", "experiments/EXP-0003/commit_gru_gap1/", "experiments/EXP-0003/results_raw.json"],
+  "script_sha256": {"gru_train.py": "d2a2ec98c6961fc1262fcfc9b6e1180933e31d50a1157d50eff0ae24969445db"}
+}

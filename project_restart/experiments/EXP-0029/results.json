@@ -1,0 +1,31 @@
+{
+  "exp_id": "EXP-0029",
+  "name": "TC-41 Gate K1：y2-only K16-GRU + one-hot17（f83-f99 → 17×3 one-hot，100→134 维）seed42 × Fold A/B",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "single_variable": "f83-f99 是否由序数数值替换为 17×3 one-hot（输入 100→134）",
+  "control": "EXP-0016 K16-GRU seed42 y2（raw c2 A 0.125503 / B 0.170568）",
+  "folds": {
+    "A": {"E": 2, "full_steps": 3658, "raw_c2": 0.125857, "control_raw_c2": 0.125503, "delta_c2": 0.000354,
+          "daily": {"8": {"k1": 0.093001, "control": 0.105482, "delta": -0.012481},
+                    "9": {"k1": 0.093312, "control": 0.083431, "delta": 0.009881},
+                    "10": {"k1": 0.146041, "control": 0.140525, "delta": 0.005516},
+                    "11": {"k1": 0.170673, "control": 0.170735, "delta": -0.000062}}},
+    "B": {"E": 2, "full_steps": 5488, "raw_c2": 0.158212, "control_raw_c2": 0.170568, "delta_c2": -0.012356,
+          "daily": {"12": {"k1": 0.175728, "control": 0.172807, "delta": 0.002921},
+                    "13": {"k1": 0.146679, "control": 0.181265, "delta": -0.034586},
+                    "14": {"k1": 0.160073, "control": 0.167064, "delta": -0.006990},
+                    "15": {"k1": 0.168865, "control": 0.184223, "delta": -0.015358}}}
+  },
+  "streaming_batch_consistency": {"A_max_abs": 4.768e-07, "B_max_abs": 3.576e-07, "pass": true},
+  "padding_preflight": "test_onehot_padding.py 10/10 PASS（padding 全零 ≠ 真实 state0）",
+  "gate_check": {
+    "foldA_delta_c2_ge_0.008": false,
+    "foldB_delta_c2_ge_0.008": false,
+    "dev_days_nonneg": "3/8 严格非负（A 2/4、B 1/4）",
+    "no_single_day_dominance": true,
+    "engineering_pass": true
+  },
+  "verdict": "HOLD / 关闭 one-hot 假设：A Δc2 ≈ 0（+0.0004）、B Δc2 为负（−0.0124），均未达 +0.008；不搜索 embedding/类别子集/其它种子/结构",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

@@ -1,0 +1,27 @@
+{
+  "pause_snapshot": "2026-11-07T20:15:00+08:00 用户安全暂停指令；2026-11-08 受限恢复 EXP-0006 完成",
+  "exp_id": "EXP-0006",
+  "status": "COMPLETED",
+  "completed": {
+    "mlp_seeds": {
+      "foldA": {"42": 0.2163, "43": 0.2162, "44": 0.2190, "sigma": 0.0013},
+      "foldB": {"42": 0.2319, "43": 0.2300, "44": 0.2311, "sigma": 0.0009}
+    },
+    "gru_seeds": {
+      "foldA": {"42": 0.2228, "43": 0.2216, "44": 0.2263, "sigma": 0.0024},
+      "foldB": {"42": 0.2531, "43": 0.2409, "44": 0.2513, "sigma": 0.0066}
+    },
+    "note": "seed42 为冻结基线 EXP-0005 数值；43/44 本轮完整重跑（A_s43 y0 复用暂停期 ckpt）"
+  },
+  "interrupted": "无（已完成）",
+  "queued_not_run": ["EXP-0007 GRU 窗口 K16/64", "EXP-0008 市场状态", "EXP-0009 类别编码", "EXP-0010 Pearson 损失（已重估，优先级降）", "EXP-0014 delta（HOLD/REJECT）"],
+  "resume_order": [
+    "1. EXP-0007 GRU 窗口 K16/64（对照 seed42 0.2228/0.2531；噪声线 A≈0.005/B≈0.013）",
+    "2. EXP-0008 市场状态（strong-MLP 宿主）",
+    "3. EXP-0009 类别 one-hot（strong-MLP 宿主）",
+    "4. 双头 GRU P1-A（低优先级，需 μ=0 基线复现）",
+    "5. EXP-0011 GRU+市场（前提 EXP-0008 正向）",
+    "6. EXP-0012 OOF 融合（前提消融结论）"
+  ],
+  "notes": "运行脚本：exp0006b_seeds.py（零覆盖）；EXP-0005 冻结基线未改动；报告 EXP0006_GRU_SEED_REVIEW.md；完成即回到安全暂停。"
+}

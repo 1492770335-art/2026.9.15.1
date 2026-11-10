@@ -1,0 +1,50 @@
+{
+  "exp_id": "EXP-0006",
+  "status": "completed",
+  "actual_model_used": "deepseek-flash（Harness 实际路由；要求 v4-pro/max 未果，如实记录）",
+  "mlp_seeds": {
+    "foldA": {"42": 0.2163, "43": 0.2162, "44": 0.2190, "sigma": 0.0013},
+    "foldB": {"42": 0.2319, "43": 0.2300, "44": 0.2311, "sigma": 0.0009}
+  },
+  "gru_seeds": {
+    "foldA": {
+      "42": {"c0": 0.4518, "c1": 0.2850, "c2": 0.0938, "score": 0.2228},
+      "43": {"c0": 0.4528, "c1": 0.2909, "c2": 0.0876, "score": 0.2216},
+      "44": {"c0": 0.4542, "c1": 0.2930, "c2": 0.0951, "score": 0.2263},
+      "score_mean": 0.2236, "score_sigma": 0.0024, "score_range": [0.2216, 0.2263]
+    },
+    "foldB": {
+      "42": {"c0": 0.4473, "c1": 0.2847, "c2": 0.1564, "score": 0.2531},
+      "43": {"c0": 0.4460, "c1": 0.2938, "c2": 0.1271, "score": 0.2409},
+      "44": {"c0": 0.4495, "c1": 0.2945, "c2": 0.1462, "score": 0.2513},
+      "score_mean": 0.2484, "score_sigma": 0.0066, "score_range": [0.2409, 0.2531]
+    },
+    "notes": "seed 42 来自冻结基线 EXP-0005；43/44 本轮重跑（A_s43 的 y0 复用暂停期 checkpoint，SHA256 29275b92…，已记录）"
+  },
+  "per_target_seed_sigma": {
+    "foldA": {"c0": 0.0012, "c1": 0.0042, "c2": 0.0039},
+    "foldB": {"c0": 0.0018, "c1": 0.0054, "c2": 0.0149}
+  },
+  "date8_removal_diagnostic": {
+    "s43": {"pooled": 0.2216, "no_date8": 0.2242, "delta": 0.0026},
+    "s44": {"pooled": 0.2263, "no_date8": 0.2323, "delta": 0.0060},
+    "note": "date8 极端日压低 Fold A pooled 约 0.003–0.006"
+  },
+  "daily_scores": {
+    "A_s43": {"8": 0.2084, "9": 0.2038, "10": 0.2370, "11": 0.2351},
+    "A_s44": {"8": 0.2080, "9": 0.2194, "10": 0.2271, "11": 0.2526},
+    "B_s43": {"12": 0.2521, "13": 0.2445, "14": 0.2288, "15": 0.2591},
+    "B_s44": {"12": 0.2623, "13": 0.2447, "14": 0.2421, "15": 0.2718}
+  },
+  "resources": {
+    "elapsed_sec": {"A_s43": 3116, "A_s44": 5125, "B_s43": 7775, "B_s44": 7766},
+    "peak_vram_mb": 4133
+  },
+  "artifacts": [
+    "experiments/EXP-0006/results_raw_gru_seeds.json",
+    "experiments/EXP-0006/ckpt_gru_{A,B}_s{43,44}/",
+    "experiments/EXP-0006/commit_gru_{A,B}_s{43,44}/",
+    "experiments/EXP-0006/results_mlp_partial.json"
+  ],
+  "script_sha256": "exp0006b_seeds.py（恢复版，零覆盖设计）"
+}

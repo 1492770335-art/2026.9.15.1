@@ -1,0 +1,20 @@
+{
+  "exp_id": "EXP-0033 / M2-1-PRE-REG",
+  "name": "M2-1 预注册（尚未授权训练）：y2-only 双时间尺度（K16-GRU128 主干 + 旧 48tick 低频 GRU16）",
+  "frozen_at": "2026-11-10（外层结果前冻结）",
+  "target": "仅 y2",
+  "model": "DualScaleGRU（K16-GRU128 + 6×8tick 均值 GRU16 + Linear(144,1)），输入 100 维不变",
+  "seed": 42,
+  "folds": {
+    "A": {"inner_fit": [0,1,2,3,4,5], "inner_stop": [6,7], "full_fit": [0,1,2,3,4,5,6,7], "outer_val": [8,9,10,11]},
+    "B": {"inner_fit": [0,1,2,3,4,5,6,7,8,9], "inner_stop": [10,11], "full_fit": [0,1,2,3,4,5,6,7,8,9,10,11], "outer_val": [12,13,14,15]}
+  },
+  "single_variable": "是否在 K16 主干外新增旧 48tick（6×8 组均值）低频分支（其余与 EXP-0016 K16-GRU 一致）",
+  "hyperparams": {"lr": 1e-4, "weight_decay": 1e-4, "batch": 1024, "grad_clip": 1.0, "loss": "MSE", "short_hidden": 128, "long_hidden": 16, "short_window": 16, "long_window": 48, "group_size": 8},
+  "protocol": "TC-27 内部早停：inner 选 E → full 固定 E 重训 → outer 仅一次评估",
+  "control": "EXP-0016 K16-GRU seed42 y2（raw c2 A 0.125503 / B 0.170568）",
+  "primary_metric": "原始 Δc2；加权贡献 0.5×Δc2",
+  "promotion_gate": {"both_folds_delta_c2_ge": 0.008, "dev_days_nonneg_at_least": "8 开发日 ≥6 日非负", "no_single_day_dominance": true, "engineering_pass": true},
+  "capacity_note": "+4864 参数且信息范围扩至 64tick；若 M2-1 有增益需等容量/同 64tick 范围对照；不搜索 48/64/96/128 历史长度、聚合宽度、隐藏宽度",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

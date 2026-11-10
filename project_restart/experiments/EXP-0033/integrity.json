@@ -1,0 +1,20 @@
+{
+  "exp_id": "EXP-0033",
+  "checks": {
+    "zero_training": true,
+    "no_overlap_short_long": true,
+    "same_day_same_stock_causal": true,
+    "denominator_valid_count_not_8": true,
+    "empty_group_masked": true,
+    "all_empty_long_zeros": true,
+    "boundary_ticks_tested": true,
+    "offline_online_alignment_pass": true,
+    "param_count_exact": true,
+    "dual_scale_tests_17_17": true,
+    "no_history_length_group_width_search": true,
+    "frozen_EXP0015_0032_untouched": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "双时间尺度：短期 [t-15,t] 与长期 [t-63,t-16] 严格分离；长期 6×8 组均值仅用有效 tick（分母=有效数）、空组 mask、全空 long=zeros；边界 tick 1/2/16/17/63/64/65 与离线/在线(max diff=0) 17/17 单测通过；参数 93313(+4864)。M2-1 已预注册，未训练。"
+}

@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0018",
+  "checks": {
+    "zero_training": true,
+    "frozen_weights_inference_only": true,
+    "no_weight_learning_from_val": true,
+    "fixed_111_weights": true,
+    "no_true_lagged_labels": true,
+    "singles_reproduced_exactly": true,
+    "official_evaluator_streaming": true,
+    "batched_streaming_consistent": true,
+    "no_market_category_experiments": true,
+    "frozen_artifacts_untouched": true
+  },
+  "notes": "异常审计为只读：未改任何权重/参数，未为高分重训；确认 0.2048 与 0.2263 之差全来自 y2 的 epoch 选择协议差异（内层 vs 外层最优 epoch 不一致），属训练波动。K16 融合为固定等权、逐行平均、无外层标签调权。"
+}

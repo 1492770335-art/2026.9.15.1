@@ -1,0 +1,37 @@
+{
+  "exp_id": "EXP-0002",
+  "status": "completed",
+  "foldA": {
+    "train_dates": [0,1,2,3,4,5,6,7],
+    "val_dates": [8,9,10,11],
+    "pooled_official": {"corr0": 0.3462, "corr1": 0.2183, "corr2": 0.1132, "score": 0.1913},
+    "daily": {"8": 0.1846, "9": 0.184, "10": 0.2025, "11": 0.2132},
+    "train_internal_diagnostic": 0.2046
+  },
+  "foldB": {
+    "train_dates": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "val_dates": [12,13,14,15],
+    "pooled_official": {"corr0": 0.3616, "corr1": 0.2318, "corr2": 0.1373, "score": 0.2105},
+    "daily": {"12": 0.2107, "13": 0.2182, "14": 0.198, "15": 0.2303},
+    "train_internal_diagnostic": 0.2084
+  },
+  "gap1": {
+    "train_dates": [0,1,2,3,4,5,6],
+    "val_dates": [8,9,10,11],
+    "pooled_official": {"corr0": 0.3426, "corr1": 0.2145, "corr2": 0.11, "score": 0.1879},
+    "delta_vs_gap0": -0.0034
+  },
+  "comparison_with_ridge": {
+    "foldA": {"ridge": 0.1929, "mlp": 0.1913, "delta": -0.0016},
+    "foldB": {"ridge": 0.2051, "mlp": 0.2105, "delta": 0.0054},
+    "note": "两折互有胜负；2-epoch 官方配方下两者都很弱，均不可作为晋级候选"
+  },
+  "losses_epoch": {"y0": [0.9443, 0.9034], "y1": [1.0426, 1.0257], "y2": [1.0664, 1.06]},
+  "resources": {"elapsed_sec": {"foldA": 80.3, "foldB": 85.7, "gap1": 64.0}, "peak_vram_mb": 1179.2},
+  "artifacts": [
+    "experiments/EXP-0002/commit_mlp_foldA/", "experiments/EXP-0002/commit_mlp_foldB/",
+    "experiments/EXP-0002/commit_mlp_gap1/", "experiments/EXP-0002/results_raw.json",
+    "experiments/EXP-0002/ckpt_foldA/", "experiments/EXP-0002/ckpt_foldB/", "experiments/EXP-0002/ckpt_gap1/"
+  ],
+  "script_sha256": {"mlp_train.py": "1e98392bd0ba8656c1e46453dd1d5aab4e7ae08f6acf2d068a56341eab7eb6ff", "metrics.py": "7e86b3bebb2a98e0564a0ff10cdd24e746ecc86db92c5e087346128683742db4"}
+}

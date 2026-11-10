@@ -1,0 +1,27 @@
+{
+  "exp_id": "EXP-0024 / D1-PRE-REG",
+  "name": "D1 预注册（尚未授权训练）：y2-only K16-GRU + diff83 相邻 tick 差分",
+  "frozen_at": "2026-11-09（外层结果前冻结）",
+  "target": "仅 y2",
+  "model": "K16-GRU，hidden=128（结构不变，仅输入由 100 → 183 维拼接 diff83）",
+  "seed": 42,
+  "folds": {
+    "A": {"inner_fit": [0,1,2,3,4,5], "inner_stop": [6,7], "full_fit": [0,1,2,3,4,5,6,7], "outer_val": [8,9,10,11]},
+    "B": {"inner_fit": [0,1,2,3,4,5,6,7,8,9], "inner_stop": [10,11], "full_fit": [0,1,2,3,4,5,6,7,8,9,10,11], "outer_val": [12,13,14,15]}
+  },
+  "hyperparams": {"lr": 1e-4, "weight_decay": 1e-4, "batch": 1024, "clip": 1.0, "loss": "MSE", "window": 16, "cap_epoch": 30, "eval_every": 2, "patience": 4},
+  "single_variable": "是否追加 83 维相邻 tick 差分（diff83），其余与 EXP-0016 K16 y2 seed42 完全一致",
+  "protocol": "TC-27 内部早停：inner 选 E → full 固定 E 重训 → outer 仅一次评估",
+  "control": "EXP-0016 本项目同协议 K16 y2 seed42（raw c2：A 0.125503 / B 0.170568）",
+  "primary_metric": "原始 Δc2 = c2(D1) - c2(control)；加权贡献 = 0.5 × Δc2",
+  "promotion_gate": {
+    "both_folds_delta_c2_ge": 0.008,
+    "dev_days_nonneg_at_least": "8 个开发日（A 8-11 / B 12-15）中 ≥6 日非负",
+    "no_single_day_dominance": true,
+    "engineering_streaming_pass": true
+  },
+  "gate_meaning": "仅决定是否追加 seed43/44 配对复验（D2），不构成统计显著或隐藏集收益证明",
+  "boundaries": "不训练类别/clip/多尺度/异构融合/其他种子；不覆盖 EXP-0015~0023 与 turing_submission_v1.zip；分阶段加载避免 OOM",
+  "actual_model_record": "deepseek-v4-pro（D0 执行路由）",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

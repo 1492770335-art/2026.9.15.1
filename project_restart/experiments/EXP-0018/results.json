@@ -1,0 +1,28 @@
+{
+  "exp_id": "EXP-0018",
+  "name": "零训练：K16 三 seed 固定等权融合 + FoldA seed44 K100 新旧协议异常审计",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "anomaly_audit_foldA_s44_K100": {
+    "old_official": {"c0": 0.4542, "c1": 0.2930, "c2": 0.0951, "score": 0.2263},
+    "new_official": {"c0": 0.4542, "c1": 0.2930, "c2": 0.0521, "score": 0.2048},
+    "score_gap": -0.0215, "c0_gap": 0.0, "c1_gap": 0.0, "c2_gap": -0.0430, "c2_weighted": -0.0215,
+    "conclusion": "gap 100% 来自 y2 的 c2（旧 E=2 外层选 vs 新 E=4 内层选）；c0/c1 逐日完全一致（y0/y1 功能同、SHA 因 cuDNN 逐次非确定性而异）；y2 内层 stop(6-7) 与外层(8-11) 最优 epoch 不一致 → 合理训练波动/早停转移噪声，非工程问题"
+  },
+  "k16_fusion": {
+    "singles_reproduced": {"A": [0.2390, 0.2432, 0.2468], "B": [0.2612, 0.2582, 0.2638], "all_exact": true},
+    "foldA": {"official": {"c0": 0.4563, "c1": 0.2986, "c2": 0.1374, "score": 0.2495},
+              "daily": {"8": 0.2258, "9": 0.2339, "10": 0.2609, "11": 0.2790}, "no_date8": 0.2567,
+              "vs_s42": 0.0105, "vs_best_single": 0.0027, "vs_seed_mean": 0.0065},
+    "foldB": {"official": {"c0": 0.4488, "c1": 0.2992, "c2": 0.1791, "score": 0.2691},
+              "daily": {"12": 0.2855, "13": 0.2684, "14": 0.2560, "15": 0.2855},
+              "vs_s42": 0.0079, "vs_best_single": 0.0053, "vs_seed_mean": 0.0080},
+    "y2_pred_pairwise_corr": {"A": {"42_43": 0.881, "42_44": 0.857, "43_44": 0.850}, "B": {"42_43": 0.826, "42_44": 0.847, "43_44": 0.833}},
+    "y2_residual_pairwise_corr": {"A": {"42_43": 0.993, "42_44": 0.992, "43_44": 0.991}, "B": {"42_43": 0.990, "42_44": 0.992, "43_44": 0.990}},
+    "streaming": {"A_date8": {"result_score": 0.2258, "batched_same_day": 0.2258, "latency_sec": 25.3, "peak_vram_mb": 1342},
+                  "B_date12": {"result_score": 0.2854, "batched_same_day": 0.2855, "latency_sec": 27.6, "peak_vram_mb": 1348}},
+    "conclusion": "K16 3-seed 固定 1:1:1 融合双折超过全部单 seed（A 0.2495/B 0.2691），零权重学习；流式 3 成员约 25-28s/日、显存 1.3GB"
+  },
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "artifacts": ["experiments/EXP-0018/results_raw.json", "experiments/EXP-0018/audit_s44_k100.json", "experiments/EXP-0018/commit_ens3_K16_{A,B}/"]
+}

@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "name": "f0-f82 clipped to [-10,10] (min>=-10, max<=10)",
+      "pass": true
+    },
+    {
+      "name": "f83-f99 unchanged (==1000)",
+      "pass": true
+    },
+    {
+      "name": "boundary -10 exact (f0=-20 -> -10)",
+      "pass": true
+    },
+    {
+      "name": "boundary +10 exact (f82=+20 -> +10)",
+      "pass": true
+    },
+    {
+      "name": "interior preserved (value 0 -> 0)",
+      "pass": true
+    },
+    {
+      "name": "float32 dtype",
+      "pass": true
+    },
+    {
+      "name": "input dim == 100",
+      "pass": true
+    },
+    {
+      "name": "stateless (same input -> same output)",
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

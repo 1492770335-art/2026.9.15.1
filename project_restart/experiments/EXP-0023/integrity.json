@@ -1,0 +1,18 @@
+{
+  "exp_id": "EXP-0023",
+  "checks": {
+    "nine_submodels_trained": true,
+    "fixed_E_no_search_on_full20": true,
+    "phased_loading_no_oom": true,
+    "official_readme_layout_followed": true,
+    "model_0_1_2_load_3seeds": true,
+    "no_absolute_paths_in_network": true,
+    "official_evaluator_unmodified": true,
+    "independent_copy_acceptance": true,
+    "finite_output_reset_ok": true,
+    "no_upload": true,
+    "frozen_EXP0015_0022_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "network.py 仅依赖 torch；Model_0/1=MarketEnsemble(3×GRU300)、Model_2=K16Ensemble(3×GRU100)，权重来自 9 个 S2 全量子模型；官方 Evaluator 从独立副本运行 20 日全 tick 无异常。"
+}

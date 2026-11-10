@@ -1,0 +1,14 @@
+{
+  "exp_id": "EXP-0003",
+  "checks": {
+    "no_future_info": true,
+    "causal_window_within_day": true,
+    "day_boundary_reset": true,
+    "train_val_isolated_by_date": true,
+    "shuffle_false_official_recipe": true,
+    "seed_42": true,
+    "official_evaluator_used": true,
+    "predictions_finite": true
+  },
+  "notes": "训练语义与 example/dataset.py 逐条等价（逐股票同日因果窗口、左零填充、日界重置），经官方流式 Evaluator 验证；GPU 单日流式评估 6.9s。"
+}

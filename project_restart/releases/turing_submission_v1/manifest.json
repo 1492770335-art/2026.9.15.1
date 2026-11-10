@@ -1,0 +1,12 @@
+{
+  "turing_submission_v1\\base.py": "3040608d734778fec9d07fda444d418ab134ec07a64a133bb498150bfdb7f064",
+  "turing_submission_v1\\description.md": "4fe2a8b08e4ef89414d301f286cfccf2dfc7458125e3e886dcf966df2e398f9d",
+  "turing_submission_v1\\network.py": "50245a5db30ff78fb89b0b8d083611fa5ad5504584c45d761b98fa3cd140a918",
+  "turing_submission_v1\\conf\\Model_0.json": "95066df2b8d1ab65d19cf0fc3fd78d70f00abca7f79414b614fd90d5ae61165c",
+  "turing_submission_v1\\conf\\Model_1.json": "95066df2b8d1ab65d19cf0fc3fd78d70f00abca7f79414b614fd90d5ae61165c",
+  "turing_submission_v1\\conf\\Model_2.json": "97d8da0f3fc6fc684f22198c202216a125cc50d8cdc38ea160c4034f8d8aa3f9",
+  "turing_submission_v1\\model\\Model_0.pth": "908db56e598e4f03b150c08d9984e7b59e2f5491c15d9375795822a1cc3cf2b9",
+  "turing_submission_v1\\model\\Model_1.pth": "c93f9fd014c93b2eeb1b106e37e5c774f138867ecd1661cfa665dd7774d5c3e7",
+  "turing_submission_v1\\model\\Model_2.pth": "ec2e7748c5b848bef2a7fadb92b207fb38b2f1598e8503770fd0095da4de1cea",
+  "_zip_sha256": "6a3fba9931831e1d92e3681f4a67f76d712cab530346e3912b16d6dbe094a4d5"
+}

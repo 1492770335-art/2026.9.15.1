@@ -1,0 +1,17 @@
+{
+  "exp_id": "EXP-0031",
+  "checks": {
+    "only_y2_seed42_fold_AB": true,
+    "four_training_phases": true,
+    "tc27_inner_earlystop": true,
+    "m0_tests_rerun_10_10": true,
+    "architecture_frozen_from_m0": true,
+    "streaming_batch_consistency_pass": true,
+    "negative_result_preserved": true,
+    "no_k2_k8_kernel_width_tcn_search": true,
+    "frozen_EXP0015_0030_untouched": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "M0 冻结架构（MultiScaleK4GRU，参数 92213/+3764）未改；训练前重跑 10/10 因果/对齐单测 PASS；流式-批量一致 4.8e-7/3.0e-7；两折 Δc2 未达 +0.008（A+0.001/B-0.001），按预注册 HOLD，不搜索其它多尺度变体。"
+}

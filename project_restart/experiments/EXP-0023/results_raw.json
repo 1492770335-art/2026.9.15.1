@@ -1,0 +1,141 @@
+{
+  "train": [
+    {
+      "seed": 42,
+      "label": 0,
+      "is_market": true,
+      "E": 4,
+      "steps": 18288,
+      "losses": [
+        0.8013068063549397,
+        0.7683822780836917,
+        0.7555547286080719,
+        0.7453743899923692
+      ],
+      "elapsed_sec": 391.3,
+      "sha256": "b70d05a0f65c40482bc579049e784127c884328be2c644f2165170a58df2991e",
+      "ckpt": "project_restart\\experiments\\EXP-0023\\market_full_s42_y0.pth"
+    },
+    {
+      "seed": 42,
+      "label": 1,
+      "is_market": true,
+      "E": 2,
+      "steps": 9144,
+      "losses": [
+        0.8828681042548912,
+        0.8391546691351848
+      ],
+      "elapsed_sec": 178.7,
+      "sha256": "bc30437994ebc8d85c6636a506a1ed19fb0b42d9794e2685902cde84d61727d5",
+      "ckpt": "project_restart\\experiments\\EXP-0023\\market_full_s42_y1.pth"
+    },
+    {
+      "seed": 43,
+      "label": 0,
+      "is_market": true,
+      "E": 4,
+      "steps": 18288,
+      "losses": [
+        0.8007915609110074,
+        0.7677705032829774,
+        0.7549102536600947,
+        0.7446606142186527
+      ],
+      "elapsed_sec": 350.8,
+      "sha256": "d2ed35da87f75a8979015a201ef8b3c7cdc9dbcba9b2710861247b633cb316ca",
+      "ckpt": "project_restart\\experiments\\EXP-0023\\market_full_s43_y0.pth"
+    },
+    {
+      "seed": 43,
+      "label": 1,
+      "is_market": true,
+      "E": 2,
+      "steps": 9144,
+      "losses": [
+        0.8836254562745355,
+        0.8416317118845091
+      ],
+      "elapsed_sec": 206.2,
+      "sha256": "8cf5c22cad0c761d05a5142d5a57c0b1a8e4ceba6ecfedacb566079d93423fb5",
+      "ckpt": "project_restart\\experiments\\EXP-0023\\market_full_s43_y1.pth"
+    },
+    {
+      "seed": 44,
+      "label": 0,
+      "is_market": true,
+      "E": 4,
+      "steps": 18288,
+      "losses": [
+        0.8010741871014724,
+        0.7678125709141912,
+        0.7552653194483747,
+        0.7454740297704324
+      ],
+      "elapsed_sec": 391.4,
+      "sha256": "7a47c9df755f52506d11c213177f01de2e9e01baa703ca6fc1ea0f93fd38bd8b",
+      "ckpt": "project_restart\\experiments\\EXP-0023\\market_full_s44_y0.pth"
+    },
+    {
+      "seed": 44,
+      "label": 1,
+      "is_market": true,
+      "E": 2,
+      "steps": 9144,
+      "losses": [
+        0.8835554940604503,
+        0.8413300818380778
+      ],
+      "elapsed_sec": 197.2,
+      "sha256": "1b2268b0dda7f493d8d02ea06d09a5669e65100d43a5417f31748d78523cf4ed",
+      "ckpt": "project_restart\\experiments\\EXP-0023\\market_full_s44_y1.pth"
+    },
+    {
+      "seed": 42,
+      "label": 2,
+      "is_market": false,
+      "E": 2,
+      "steps": 9144,
+      "losses": [
+        0.9649045056497771,
+        0.9373322114081
+      ],
+      "elapsed_sec": 375.1,
+      "sha256": "0d49da2934bcbebb1d230324b01b33e67f8b1d40607645d48e90684308ff813a",
+      "ckpt": "project_restart\\experiments\\EXP-0023\\k16_full_s42_y2.pth"
+    },
+    {
+      "seed": 43,
+      "label": 2,
+      "is_market": false,
+      "E": 2,
+      "steps": 9144,
+      "losses": [
+        0.965244926443668,
+        0.9352348826156581
+      ],
+      "elapsed_sec": 371.8,
+      "sha256": "58e32de2763077a9ac5a338259787197ee4a9958ee01c6f6d93f433dc2439645",
+      "ckpt": "project_restart\\experiments\\EXP-0023\\k16_full_s43_y2.pth"
+    },
+    {
+      "seed": 44,
+      "label": 2,
+      "is_market": false,
+      "E": 2,
+      "steps": 9144,
+      "losses": [
+        0.9652191238956822,
+        0.937298029931754
+      ],
+      "elapsed_sec": 367.4,
+      "sha256": "75ecf40a8f37d8b23f26902ca03faca44e8d281161802d938d84cfa14cc04ed8",
+      "ckpt": "project_restart\\experiments\\EXP-0023\\k16_full_s44_y2.pth"
+    }
+  ],
+  "start": "2026-11-09T17:07:16",
+  "total_elapsed_sec": 2896.5,
+  "end": "2026-11-09T17:55:33",
+  "peak_vram_allocated_mb": 387.6,
+  "peak_vram_reserved_mb": 572.5
+}

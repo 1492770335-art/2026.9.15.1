@@ -1,0 +1,14 @@
+{
+  "exp_id": "EXP-0002",
+  "checks": {
+    "no_future_info": true,
+    "train_val_isolated_by_date": true,
+    "no_val_labels_in_training": true,
+    "shuffle_false_official_recipe": true,
+    "seed_42": true,
+    "official_evaluator_used": true,
+    "evaluator_device": "cuda:0（验证官方 GPU 流式路径可用）",
+    "predictions_finite": true
+  },
+  "notes": "gap1 相对 gap0 降 0.0034（Ridge 为 +0.0014）：两模型方向不一致、幅度在噪声范围，跨日标签泄漏无一致证据；horizon 仍未知（INFERRED）。train_internal 分数仅工程诊断，不代表 OOS。"
+}

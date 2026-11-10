@@ -1,0 +1,26 @@
+{
+  "exp_id": "EXP-0021",
+  "name": "TC-32 Gate H1：Market y0/y1 多种子配对复验 + 三 seed 市场路由",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "market_single_target_corr": {
+    "y0": {"seed42": {"A": 0.4637, "B": 0.4811}, "seed43": {"A": 0.4648, "B": 0.4803}, "seed44": {"A": 0.4669, "B": 0.4823}},
+    "y1": {"seed42": {"A": 0.3033, "B": 0.3453}, "seed43": {"A": 0.3056, "B": 0.3509}, "seed44": {"A": 0.3062, "B": 0.3656}}
+  },
+  "paired_delta_vs_K16_nonmarket": {
+    "y0_A": {"42": 0.0136, "43": 0.0156, "44": 0.0159},
+    "y0_B": {"42": 0.0372, "43": 0.0372, "44": 0.0360},
+    "y1_A": {"42": 0.0159, "43": 0.0133, "44": 0.0108},
+    "y1_B": {"42": 0.0548, "43": 0.0591, "44": 0.0716},
+    "note": "全部 6 个 seed×fold 配对 y0/y1 均正，方向高度稳定"
+  },
+  "routing_3seed": {
+    "foldA": {"c0": 0.4713, "c1": 0.3144, "c2": 0.1374, "score": 0.2573, "daily": {"8": 0.234, "9": 0.2462, "10": 0.2654, "11": 0.2841}, "no_date8": 0.2643, "delta_vs_control": 0.0078},
+    "foldB": {"c0": 0.4863, "c1": 0.3635, "c2": 0.1791, "score": 0.2958, "daily": {"12": 0.3138, "13": 0.2933, "14": 0.2911, "15": 0.3029}, "delta_vs_control": 0.0267}
+  },
+  "control": "EXP-0018 K16 非Market 三 seed 全目标融合：A 0.2495 / B 0.2691",
+  "y2_invariance": "c2 = 0.1374(A)/0.1791(B) 与 EXP-0018 完全一致，y2 未变 ✓",
+  "engineering": {"latency_sec_day": 20.0, "peak_vram_mb_streaming": 222, "official_streaming_ok": true, "n_networks": 9},
+  "verdict": "KEEP as submission candidate（仍为 post-hoc 目标路由的开发验证，非盲测）",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

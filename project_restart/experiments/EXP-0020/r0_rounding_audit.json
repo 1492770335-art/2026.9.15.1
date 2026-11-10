@@ -1,0 +1,40 @@
+{
+  "A": {
+    "unrounded_corr": [
+      0.4636769366425915,
+      0.3032719233501201,
+      0.13739284314987754
+    ],
+    "corr0_disp": 0.4637,
+    "corr1_disp": 0.3033,
+    "corr2_disp": 0.1374,
+    "official_score": 0.2524,
+    "naive_from_displayed": 0.2524,
+    "raw_weighted": 0.2524133859084931,
+    "official_evaluator": {
+      "corr0": 0.4637,
+      "corr1": 0.3033,
+      "corr2": 0.1374,
+      "score": 0.2524
+    }
+  },
+  "B": {
+    "unrounded_corr": [
+      0.4811416086003285,
+      0.34526168361482834,
+      0.17905408846966808
+    ],
+    "corr0_disp": 0.4811,
+    "corr1_disp": 0.3453,
+    "corr2_disp": 0.1791,
+    "official_score": 0.2893,
+    "naive_from_displayed": 0.2894,
+    "raw_weighted": 0.28933387103934827,
+    "official_evaluator": {
+      "corr0": 0.4811,
+      "corr1": 0.3453,
+      "corr2": 0.1791,
+      "score": 0.2893
+    }
+  }
+}

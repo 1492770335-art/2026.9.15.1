@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0027",
+  "checks": {
+    "only_y2_seed42_fold_AB": true,
+    "four_training_phases": true,
+    "tc27_inner_earlystop": true,
+    "clip_train_stream_same_stage": true,
+    "clip_boundary_tests_8_8": true,
+    "no_threshold_search": true,
+    "negative_or_subthreshold_result_preserved": true,
+    "frozen_EXP0015_0026_untouched": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "clip83 在训练端（load 后 clip）与流式端（predict 前 clip）同一阶段；8/8 边界单测（±10 边界、f83-f99 不变、float32、无状态）；两折 Δc2 均低于 +0.008，按预注册 HOLD，不做阈值搜索。"
+}

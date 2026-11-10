@@ -1,0 +1,15 @@
+{
+  "exp_id": "EXP-0024",
+  "name": "TC-37 Gate D0：第二轮提分第一批零训练审计 + diff83 特征构造验证 + D1 预注册",
+  "alignment": {
+    "offline_build_diff83_vs_online_streaming": {
+      "max_abs_diff": 0.0,
+      "tolerance": 1e-6,
+      "pass": true,
+      "synthetic": "1 day x 20 ticks x 50 codes, feature=row index",
+      "n_ticks_checked": 20,
+      "n_codes": 50
+    }
+  },
+  "note": "离线 build_diff83 与在线 online_feat183（维护 prev_raw 状态）逐 tick 完全一致；首 tick diff=0、17-tick 历史边界、左填充、日切换、股票隔离、未来隔离均通过。"
+}

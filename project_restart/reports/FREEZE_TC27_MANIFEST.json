@@ -1,0 +1,922 @@
+﻿[
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\decision.md",
+        "SHA256":  "B1C540FC4CF817CBD0A4BEC759A20ACB888D96D09A0B81D8184DC35D80D58590",
+        "Size":  1029
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\integrity.json",
+        "SHA256":  "A812ADE2C91BDB49A4F729ABF1311D44259426777E536267D5557025690A9F51",
+        "Size":  511
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\results.json",
+        "SHA256":  "1EC3EEDD9A7FB4F7221AECE03D53A51C6328E58648F5A1D85E759594B6C9E7C9",
+        "Size":  1477
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\results_raw.json",
+        "SHA256":  "1E34B1BB2C1E4854CB6635E8E6ED9174BBBCDB1E4A576E2F2A3B9A15228311FB",
+        "Size":  5200
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\ckpt_foldA\\Model_0.pth",
+        "SHA256":  "978B63C232C5BA8616E9D4D46C8E6F56B8944FC95C9B4A6496551A62BADCB315",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\ckpt_foldA\\Model_1.pth",
+        "SHA256":  "E61410DE413EE8164BB5A3CD4ACE6EEB1928BCC5D6B0B27C55B233C046DA30B4",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\ckpt_foldA\\Model_2.pth",
+        "SHA256":  "E328829A1F8752E1A1C764A2D65B917BABF0B8449D116040ED1F38F0C90E7087",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\ckpt_foldB\\Model_0.pth",
+        "SHA256":  "EFED8CFEB0709750C4DB1D3D62E1D6ADB90B894ACB654ECFAE6485DA4ABE0BDE",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\ckpt_foldB\\Model_1.pth",
+        "SHA256":  "021E06AB235C33EDE54CE3F8153E3D0EE6E791053F5763CF0AB92BD48489FC13",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\ckpt_foldB\\Model_2.pth",
+        "SHA256":  "671B5EA7ECAC72569CA65D2ECFB4812074ABF0411E1C65A59CEBED21F1A2B404",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\network.py",
+        "SHA256":  "5405038EE60564C975C0C9A316A8AC727F542AA5DFF3B67DEC1AA9647201472C",
+        "Size":  901
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\conf\\Model_0.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\conf\\Model_1.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\conf\\Model_2.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\model\\Model_0.pth",
+        "SHA256":  "978B63C232C5BA8616E9D4D46C8E6F56B8944FC95C9B4A6496551A62BADCB315",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\model\\Model_1.pth",
+        "SHA256":  "E61410DE413EE8164BB5A3CD4ACE6EEB1928BCC5D6B0B27C55B233C046DA30B4",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\model\\Model_2.pth",
+        "SHA256":  "E328829A1F8752E1A1C764A2D65B917BABF0B8449D116040ED1F38F0C90E7087",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "C0F1EDB178E9676E7E300FF225A8FB72F5989479CEB3423E1BE1B810FAA4D9C0",
+        "Size":  1096
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldA\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "95AC9663E80C24FD9AEBD320D7E4862F4AA0DB525AC3C5FDF0B7993ADA372759",
+        "Size":  2302
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\network.py",
+        "SHA256":  "5405038EE60564C975C0C9A316A8AC727F542AA5DFF3B67DEC1AA9647201472C",
+        "Size":  901
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\conf\\Model_0.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\conf\\Model_1.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\conf\\Model_2.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\model\\Model_0.pth",
+        "SHA256":  "EFED8CFEB0709750C4DB1D3D62E1D6ADB90B894ACB654ECFAE6485DA4ABE0BDE",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\model\\Model_1.pth",
+        "SHA256":  "021E06AB235C33EDE54CE3F8153E3D0EE6E791053F5763CF0AB92BD48489FC13",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\model\\Model_2.pth",
+        "SHA256":  "671B5EA7ECAC72569CA65D2ECFB4812074ABF0411E1C65A59CEBED21F1A2B404",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "BA11CD4906620F6628D0709F7EE541599E391F593EA83F6775D961931D594774",
+        "Size":  1096
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0005\\commit_grustrong_foldB\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "AD2C5FA69E01F82AEEC59FA7EA6C8869AE9C433B08A8CD06A30D2C8409B9FFE0",
+        "Size":  2302
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\decision.md",
+        "SHA256":  "3B4C1F37F2A453F73246A74138EA7FC41C01E9109012E4041BA1AF533CF1EE80",
+        "Size":  1195
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\integrity.json",
+        "SHA256":  "82FF9960C393B1B3C6F4C71AFD6F6A7FEAA03680A5C9C19014865E9073B51698",
+        "Size":  619
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\pause_snapshot.json",
+        "SHA256":  "24249ACCDB5084B875724FDE0AF932BEB4C8229FF1CA95F446E9A1C468BDCB43",
+        "Size":  1474
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\results.json",
+        "SHA256":  "34DE7CE162920EE64C65222ECB05290782D95CF8C1F049DDEDB993407F8CB2C3",
+        "Size":  2280
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\results_mlp_partial.json",
+        "SHA256":  "C8CC4B4982B71021D03D001529CFDD1F91FE31C234B1A6482C192389EE2406EC",
+        "Size":  746
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\results_raw_gru_seeds.json",
+        "SHA256":  "CAA995A3439962A163421F4275A4941B84D287E032BFDDE2C9C19B3A0E05D389",
+        "Size":  6364
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_A_s43\\Model_0.pth",
+        "SHA256":  "29275B923ECC6B1FB855FB10052A022FF8A2578C96DC91892A615656BCAC0CA2",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_A_s43\\Model_1.pth",
+        "SHA256":  "A282CAC81B03BF4B21F580788F0EE5CFF7B1E7F50542949A93D8F0E50762D0C9",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_A_s43\\Model_2.pth",
+        "SHA256":  "FD9EA6EC7D4FBFD880898D45F86218D64A726F15BE437863B76E6C7E789B846B",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_A_s44\\Model_0.pth",
+        "SHA256":  "A9711B2BDCBC56B64A824455E53192813958A2552F264757B766198EF4995906",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_A_s44\\Model_1.pth",
+        "SHA256":  "4CCCD8386AC1F51937BCCF7A7DECF1D841F210FC0391306733DB8C5FFFFBF501",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_A_s44\\Model_2.pth",
+        "SHA256":  "30B3C8FC0A71DE86C36378D685D02E76B4D6B6447883D9C81A75D8456703CDE7",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_B_s43\\Model_0.pth",
+        "SHA256":  "EACA69FD3CA1443F965B636C4F9D3C322EA2DAFE44CA8FAA26E82E2D179CC593",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_B_s43\\Model_1.pth",
+        "SHA256":  "17A68560B24901304168FEDAC595DF2262A1BD6684A5C5882980BA2AFE96A82C",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_B_s43\\Model_2.pth",
+        "SHA256":  "CB59091BF7E3B152A695F19F1F261DD2F985E2F82D8D452C09D55C5811FE2B58",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_B_s44\\Model_0.pth",
+        "SHA256":  "7FBDA5A7E7DCD3900B64998AF64FB8297514CE458F892B27B874EF89F4EB1183",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_B_s44\\Model_1.pth",
+        "SHA256":  "45BC1A4FB688A7FE07D13D0B04203CAEF733018F400C2859B4F7F1AC3C835395",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_gru_B_s44\\Model_2.pth",
+        "SHA256":  "B6D32CDD2F560D57322C06176A538E8E15289D314515A6E56248A9EB3FE36EBB",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_A_s42\\Model_0.pth",
+        "SHA256":  "07E9C889EC3C5E05B8D292C87CBF5FCC42F84F2945AC3A5F473CB2BA55512067",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_A_s42\\Model_1.pth",
+        "SHA256":  "4721E04E9C948C68FD9680EBED9D9AA8F0DE9BDCBC83DB05089F3423CCB86B38",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_A_s42\\Model_2.pth",
+        "SHA256":  "ABB5631E240FF59C0075D10520D8A40AD3DF28ECB5C92CD8C2D0E543D7C53212",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_A_s43\\Model_0.pth",
+        "SHA256":  "738DF887D6D1829C0B18684DF31FA3340CC97A86E0CB06A3A18A0DF6685973D3",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_A_s43\\Model_1.pth",
+        "SHA256":  "9520EF09A789B82F4AD829D2032B93A7AD469F9709026464C54E1A5A2A2A3A1C",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_A_s43\\Model_2.pth",
+        "SHA256":  "65EC54F72023ECDE71C0880AE44ABF148FFC4F820064BDFE20F0AE431917E894",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_A_s44\\Model_0.pth",
+        "SHA256":  "641AD23724215C743D36391545375D0FEE7D6A47BD67EE6A9A47ED53F807522C",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_A_s44\\Model_1.pth",
+        "SHA256":  "7B2549F9EC6D0C7214CB4B0710EC8C4A439572022F768C72AABF13F019551848",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_A_s44\\Model_2.pth",
+        "SHA256":  "7C9ADAC4F84F09C4050FB1499184306D33E636631243FFA81685A0E162995761",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_B_s42\\Model_0.pth",
+        "SHA256":  "93E1C6780DEB89DD1FE83327C5F9384CA195C43F569722F4C79F385A7C451D11",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_B_s42\\Model_1.pth",
+        "SHA256":  "C862BB252F0D4FB4D8C9065D45D4A8FA25929575987399D2C9BE4F9E00A25D6C",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_B_s42\\Model_2.pth",
+        "SHA256":  "8E37BA1827064424DF4BD4277E7FE0D36423CE68A30845573145C36B51ED9696",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_B_s43\\Model_0.pth",
+        "SHA256":  "B4F7D810FC288909E5529B748500B4BF9E6CE83FBA388DD6ED7483067B9710E7",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_B_s43\\Model_1.pth",
+        "SHA256":  "47C4603D7C95630DB9ABFB41D159761EC1E7EC63E1997C935AAD1116BF10C9C5",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_B_s43\\Model_2.pth",
+        "SHA256":  "9A08456B5DED368ECC2BEC4AEEA040413633494964ADDBFBCC48A1AAC5969548",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_B_s44\\Model_0.pth",
+        "SHA256":  "AFF62CE9D3462B6127EB95689C1BC965AE6F64178DDBFAE7CACA0E6D004B2307",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_B_s44\\Model_1.pth",
+        "SHA256":  "4F61353599703EB6486BD9E2C661A8DA0DA1C3CDC48A1441783F55F2292CC745",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\ckpt_mlp_B_s44\\Model_2.pth",
+        "SHA256":  "58AC55EABCA5EB9D4506B8701C22EF55DD4D5E12F4E7C8AC2D645E34D7FED14C",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\network.py",
+        "SHA256":  "5405038EE60564C975C0C9A316A8AC727F542AA5DFF3B67DEC1AA9647201472C",
+        "Size":  901
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\conf\\Model_0.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\conf\\Model_1.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\conf\\Model_2.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\model\\Model_0.pth",
+        "SHA256":  "29275B923ECC6B1FB855FB10052A022FF8A2578C96DC91892A615656BCAC0CA2",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\model\\Model_1.pth",
+        "SHA256":  "A282CAC81B03BF4B21F580788F0EE5CFF7B1E7F50542949A93D8F0E50762D0C9",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\model\\Model_2.pth",
+        "SHA256":  "FD9EA6EC7D4FBFD880898D45F86218D64A726F15BE437863B76E6C7E789B846B",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "F50230A4BD9FF4FEA6154C535AE146D7B7D728F256C5799EFD4A1578E7AD0697",
+        "Size":  1090
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s43\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "8A2666D1CAA38A7C3868FCFCC55D2D965ED7A545C408C8F5B85071E0504CB4C4",
+        "Size":  2296
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\network.py",
+        "SHA256":  "5405038EE60564C975C0C9A316A8AC727F542AA5DFF3B67DEC1AA9647201472C",
+        "Size":  901
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\conf\\Model_0.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\conf\\Model_1.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\conf\\Model_2.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\model\\Model_0.pth",
+        "SHA256":  "A9711B2BDCBC56B64A824455E53192813958A2552F264757B766198EF4995906",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\model\\Model_1.pth",
+        "SHA256":  "4CCCD8386AC1F51937BCCF7A7DECF1D841F210FC0391306733DB8C5FFFFBF501",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\model\\Model_2.pth",
+        "SHA256":  "30B3C8FC0A71DE86C36378D685D02E76B4D6B6447883D9C81A75D8456703CDE7",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "19A4FD5578B1A6A5CBB167F274E1A7FD529C6F40912C4FCBF41F086A9C9477F9",
+        "Size":  1090
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_A_s44\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "54D50D213538D5D98D1D0942BD596AF79A87B49EDD3550EC7BFE8F971AA10927",
+        "Size":  2296
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s43\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s43\\network.py",
+        "SHA256":  "5405038EE60564C975C0C9A316A8AC727F542AA5DFF3B67DEC1AA9647201472C",
+        "Size":  901
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s43\\conf\\Model_0.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s43\\conf\\Model_1.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s43\\conf\\Model_2.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s43\\model\\Model_0.pth",
+        "SHA256":  "EACA69FD3CA1443F965B636C4F9D3C322EA2DAFE44CA8FAA26E82E2D179CC593",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s43\\model\\Model_1.pth",
+        "SHA256":  "17A68560B24901304168FEDAC595DF2262A1BD6684A5C5882980BA2AFE96A82C",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s43\\model\\Model_2.pth",
+        "SHA256":  "CB59091BF7E3B152A695F19F1F261DD2F985E2F82D8D452C09D55C5811FE2B58",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s43\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "A28351C68F9B485F6EF364DAB65724B7ECCF794C29042587E4D47986CF611B2F",
+        "Size":  2296
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\network.py",
+        "SHA256":  "5405038EE60564C975C0C9A316A8AC727F542AA5DFF3B67DEC1AA9647201472C",
+        "Size":  901
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\conf\\Model_0.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\conf\\Model_1.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\conf\\Model_2.json",
+        "SHA256":  "1EFDA7486052C7F66937168430A41D99BD764CF3960876F910E42B061F6B7C2A",
+        "Size":  46
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\model\\Model_0.pth",
+        "SHA256":  "7FBDA5A7E7DCD3900B64998AF64FB8297514CE458F892B27B874EF89F4EB1183",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\model\\Model_1.pth",
+        "SHA256":  "45BC1A4FB688A7FE07D13D0B04203CAEF733018F400C2859B4F7F1AC3C835395",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\model\\Model_2.pth",
+        "SHA256":  "B6D32CDD2F560D57322C06176A538E8E15289D314515A6E56248A9EB3FE36EBB",
+        "Size":  356373
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "7E3648A8D2ADA602A9142FAD54153A4D53A3F5B7DB4CA5904D29B96C8B0C7CAE",
+        "Size":  1090
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_gru_B_s44\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "2BB5AA37FECE73102F415BA3448BD65CB0082F4232D2748F4E52675B736C440B",
+        "Size":  2296
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\network.py",
+        "SHA256":  "712B14E758E83EA54A91B28565B51C24E00A5185D4EEF9C3C8794230ACE677BD",
+        "Size":  463
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\conf\\Model_0.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\conf\\Model_1.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\conf\\Model_2.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\model\\Model_0.pth",
+        "SHA256":  "07E9C889EC3C5E05B8D292C87CBF5FCC42F84F2945AC3A5F473CB2BA55512067",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\model\\Model_1.pth",
+        "SHA256":  "4721E04E9C948C68FD9680EBED9D9AA8F0DE9BDCBC83DB05089F3423CCB86B38",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\model\\Model_2.pth",
+        "SHA256":  "ABB5631E240FF59C0075D10520D8A40AD3DF28ECB5C92CD8C2D0E543D7C53212",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "3C2F0D3319D9C6671746BAC5603774C6EFCBD87FEA995B9526A97E69124EA763",
+        "Size":  1090
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s42\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "0F07E5F8342531AE61DDFD3823CDF2CEE99C7D3C051684A8F8ED5B7A181F816A",
+        "Size":  1576
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\network.py",
+        "SHA256":  "712B14E758E83EA54A91B28565B51C24E00A5185D4EEF9C3C8794230ACE677BD",
+        "Size":  463
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\conf\\Model_0.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\conf\\Model_1.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\conf\\Model_2.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\model\\Model_0.pth",
+        "SHA256":  "738DF887D6D1829C0B18684DF31FA3340CC97A86E0CB06A3A18A0DF6685973D3",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\model\\Model_1.pth",
+        "SHA256":  "9520EF09A789B82F4AD829D2032B93A7AD469F9709026464C54E1A5A2A2A3A1C",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\model\\Model_2.pth",
+        "SHA256":  "65EC54F72023ECDE71C0880AE44ABF148FFC4F820064BDFE20F0AE431917E894",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "FBC7288B3C94869BBFB9B1C11077F7DC4507E1434235155EC97AEBBCEA42BEE1",
+        "Size":  1090
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s43\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "4665405BA2C50A1E4D6A096799CE0AFD1C0D5161ED7969B9EA48CF40380E399D",
+        "Size":  1576
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s44\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s44\\network.py",
+        "SHA256":  "712B14E758E83EA54A91B28565B51C24E00A5185D4EEF9C3C8794230ACE677BD",
+        "Size":  463
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s44\\conf\\Model_0.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s44\\conf\\Model_1.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s44\\conf\\Model_2.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s44\\model\\Model_0.pth",
+        "SHA256":  "641AD23724215C743D36391545375D0FEE7D6A47BD67EE6A9A47ED53F807522C",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s44\\model\\Model_1.pth",
+        "SHA256":  "7B2549F9EC6D0C7214CB4B0710EC8C4A439572022F768C72AABF13F019551848",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s44\\model\\Model_2.pth",
+        "SHA256":  "7C9ADAC4F84F09C4050FB1499184306D33E636631243FFA81685A0E162995761",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_A_s44\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "413287C3D00363D328369CB67A6E445981F808B472ABB7880286CDEAD946C872",
+        "Size":  1576
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\network.py",
+        "SHA256":  "712B14E758E83EA54A91B28565B51C24E00A5185D4EEF9C3C8794230ACE677BD",
+        "Size":  463
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\conf\\Model_0.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\conf\\Model_1.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\conf\\Model_2.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\model\\Model_0.pth",
+        "SHA256":  "93E1C6780DEB89DD1FE83327C5F9384CA195C43F569722F4C79F385A7C451D11",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\model\\Model_1.pth",
+        "SHA256":  "C862BB252F0D4FB4D8C9065D45D4A8FA25929575987399D2C9BE4F9E00A25D6C",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\model\\Model_2.pth",
+        "SHA256":  "8E37BA1827064424DF4BD4277E7FE0D36423CE68A30845573145C36B51ED9696",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "24CA1A140AD801D20ED3A6D73E34CFD8B65D54E19299AC5972421F9CC4ACF401",
+        "Size":  1090
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s42\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "D59209200AE0EF2A456CE8FFBCF2708560F92251D72F1009163377D69FC61ABB",
+        "Size":  1576
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s43\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s43\\network.py",
+        "SHA256":  "712B14E758E83EA54A91B28565B51C24E00A5185D4EEF9C3C8794230ACE677BD",
+        "Size":  463
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s43\\conf\\Model_0.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s43\\conf\\Model_1.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s43\\conf\\Model_2.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s43\\model\\Model_0.pth",
+        "SHA256":  "B4F7D810FC288909E5529B748500B4BF9E6CE83FBA388DD6ED7483067B9710E7",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s43\\model\\Model_1.pth",
+        "SHA256":  "47C4603D7C95630DB9ABFB41D159761EC1E7EC63E1997C935AAD1116BF10C9C5",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s43\\model\\Model_2.pth",
+        "SHA256":  "9A08456B5DED368ECC2BEC4AEEA040413633494964ADDBFBCC48A1AAC5969548",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s43\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "86E2991659B1AB48E3E2598E15F8594BE880BCE012F9225C7D0E750911D5AD70",
+        "Size":  1576
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\network.py",
+        "SHA256":  "712B14E758E83EA54A91B28565B51C24E00A5185D4EEF9C3C8794230ACE677BD",
+        "Size":  463
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\conf\\Model_0.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\conf\\Model_1.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\conf\\Model_2.json",
+        "SHA256":  "4CD850C80B7E56C10C1F9E27CCDBC12851105EE33B10A38E1C403075CC0E0370",
+        "Size":  31
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\model\\Model_0.pth",
+        "SHA256":  "AFF62CE9D3462B6127EB95689C1BC965AE6F64178DDBFAE7CACA0E6D004B2307",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\model\\Model_1.pth",
+        "SHA256":  "4F61353599703EB6486BD9E2C661A8DA0DA1C3CDC48A1441783F55F2292CC745",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\model\\Model_2.pth",
+        "SHA256":  "58AC55EABCA5EB9D4506B8701C22EF55DD4D5E12F4E7C8AC2D645E34D7FED14C",
+        "Size":  120853
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "E8809AA1549F6C407D476E301A31A98C17576B2139CB8DAF01D8C8A033E6507D",
+        "Size":  1090
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006\\commit_mlp_B_s44\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "F6F876846E45009FB1AF29FB0D17FE8DEDF25F84C1EB2106C99A47DC84601D96",
+        "Size":  1576
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\results_raw.json",
+        "SHA256":  "9A1A1243B704451C41F5F251293FFF0B59F23F8E620F843CA45C950467A176F4",
+        "Size":  11199
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\network.py",
+        "SHA256":  "95C8D03676454654CBDB0ABEDE126A59FD4433FF805F10F1B44F519291F36797",
+        "Size":  1197
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\conf\\Model_0.json",
+        "SHA256":  "90F52438E24840ABD8855CC9436F1F95DE30C760AA235706BF593C151E23CE01",
+        "Size":  54
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\conf\\Model_1.json",
+        "SHA256":  "90F52438E24840ABD8855CC9436F1F95DE30C760AA235706BF593C151E23CE01",
+        "Size":  54
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\conf\\Model_2.json",
+        "SHA256":  "90F52438E24840ABD8855CC9436F1F95DE30C760AA235706BF593C151E23CE01",
+        "Size":  54
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\model\\Model_0.pth",
+        "SHA256":  "4CF9DE24B7978690CCB8556B396B8611F0374E3260C56EB1F4F917474036EBEA",
+        "Size":  1067117
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\model\\Model_1.pth",
+        "SHA256":  "D6CE9F8A24F3B620F0A6943702EA6253A665B3C6F87BE1C5E802D00C731EC942",
+        "Size":  1067117
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\model\\Model_2.pth",
+        "SHA256":  "AFEA2D1B37051F3E6C082D3C5F63FC8AA31104B7CE887A8ED803AAF1DCA9718F",
+        "Size":  1067117
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "5971BE92579B9D7F12EAB95C017C6BE1D8522ACC60EF78C4AD2B8362086CF46C",
+        "Size":  1088
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_A\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "AEEEADEBE1D06D99023806DD5E3994E5F300F24A04E3CD7ECDB8C2CD8768CF48",
+        "Size":  3321
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\base.py",
+        "SHA256":  "3040608D734778FEC9D07FDA444D418AB134EC07A64A133BB498150BFDB7F064",
+        "Size":  384
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\network.py",
+        "SHA256":  "95C8D03676454654CBDB0ABEDE126A59FD4433FF805F10F1B44F519291F36797",
+        "Size":  1197
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\conf\\Model_0.json",
+        "SHA256":  "90F52438E24840ABD8855CC9436F1F95DE30C760AA235706BF593C151E23CE01",
+        "Size":  54
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\conf\\Model_1.json",
+        "SHA256":  "90F52438E24840ABD8855CC9436F1F95DE30C760AA235706BF593C151E23CE01",
+        "Size":  54
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\conf\\Model_2.json",
+        "SHA256":  "90F52438E24840ABD8855CC9436F1F95DE30C760AA235706BF593C151E23CE01",
+        "Size":  54
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\model\\Model_0.pth",
+        "SHA256":  "DBB0DF7F83397D47B3959C2BCADCC4E8EE8FE6DDB3A180EE535153F6B5ED8188",
+        "Size":  1067117
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\model\\Model_1.pth",
+        "SHA256":  "5F8488E07257B41515D5BDA44A2068AABD37A290BA22AE15BA3789AEDFF5DFFF",
+        "Size":  1067117
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\model\\Model_2.pth",
+        "SHA256":  "F96A0686968CE49A05299AA12ADBFF7C48F7B0228863A04A8456260748969BED",
+        "Size":  1067117
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\__pycache__\\base.cpython-313.pyc",
+        "SHA256":  "CCDF8D4B63DBF9BC8B99ED460341F2BA69357BC74FBBEDF165EB133E029683E2",
+        "Size":  1088
+    },
+    {
+        "Path":  "project_restart\\experiments\\EXP-0006C\\commit_ens3_B\\__pycache__\\network.cpython-313.pyc",
+        "SHA256":  "BC3B05C2045199813044897E3CA80EDE49E9B049F952E03A8608D907FE8A70CE",
+        "Size":  3321
+    }
+]

@@ -1,0 +1,110 @@
+{
+  "train": [
+    {
+      "seed": 42,
+      "label": 0,
+      "is_market": true,
+      "E": 4,
+      "steps": 14632,
+      "ckpt": "project_restart\\experiments\\EXP-0022\\market_s1_s42_y0.pth"
+    },
+    {
+      "seed": 42,
+      "label": 1,
+      "is_market": true,
+      "E": 2,
+      "steps": 7316,
+      "ckpt": "project_restart\\experiments\\EXP-0022\\market_s1_s42_y1.pth"
+    },
+    {
+      "seed": 43,
+      "label": 0,
+      "is_market": true,
+      "E": 4,
+      "steps": 14632,
+      "ckpt": "project_restart\\experiments\\EXP-0022\\market_s1_s43_y0.pth"
+    },
+    {
+      "seed": 43,
+      "label": 1,
+      "is_market": true,
+      "E": 2,
+      "steps": 7316,
+      "ckpt": "project_restart\\experiments\\EXP-0022\\market_s1_s43_y1.pth"
+    },
+    {
+      "seed": 44,
+      "label": 0,
+      "is_market": true,
+      "E": 4,
+      "steps": 14632,
+      "ckpt": "project_restart\\experiments\\EXP-0022\\market_s1_s44_y0.pth"
+    },
+    {
+      "seed": 44,
+      "label": 1,
+      "is_market": true,
+      "E": 2,
+      "steps": 7316,
+      "ckpt": "project_restart\\experiments\\EXP-0022\\market_s1_s44_y1.pth"
+    },
+    {
+      "seed": 42,
+      "label": 2,
+      "is_market": false,
+      "E": 2,
+      "steps": 7316,
+      "ckpt": "project_restart\\experiments\\EXP-0022\\k16_s1_s42_y2.pth"
+    },
+    {
+      "seed": 43,
+      "label": 2,
+      "is_market": false,
+      "E": 2,
+      "steps": 7316,
+      "ckpt": "project_restart\\experiments\\EXP-0022\\k16_s1_s43_y2.pth"
+    },
+    {
+      "seed": 44,
+      "label": 2,
+      "is_market": false,
+      "E": 2,
+      "steps": 7316,
+      "ckpt": "project_restart\\experiments\\EXP-0022\\k16_s1_s44_y2.pth"
+    }
+  ],
+  "outer_16_19": {
+    "pooled_official": {
+      "corr0": 0.4841,
+      "corr1": 0.338,
+      "corr2": 0.1897,
+      "score": 0.2931
+    },
+    "daily": {
+      "16": {
+        "corr0": 0.4975,
+        "corr1": 0.3686,
+        "corr2": 0.2238,
+        "score": 0.322
+      },
+      "17": {
+        "corr0": 0.4833,
+        "corr1": 0.3307,
+        "corr2": 0.146,
+        "score": 0.2689
+      },
+      "18": {
+        "corr0": 0.4798,
+        "corr1": 0.3132,
+        "corr2": 0.197,
+        "score": 0.2884
+      },
+      "19": {
+        "corr0": 0.4733,
+        "corr1": 0.3319,
+        "corr2": 0.202,
+        "score": 0.2952
+      }
+    }
+  }
+}

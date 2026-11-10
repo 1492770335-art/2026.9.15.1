@@ -1,0 +1,27 @@
+{
+  "exp_id": "EXP-0033",
+  "name": "TC-45 M2-0：y2 双时间尺度（K16 主干 + 旧 48tick 低频聚合）零训练审计",
+  "baseline_and_provenance": {
+    "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+    "evaluate_py_sha256": "26f7a967b202b4bf9b51d8b160d3b42de116d96082530624638e16067beae6b0",
+    "exp0016_k16_y2_ckpt_sha": {"A": "1415263f20dc5ecc2dee1f019263866fe4078eddeca6e502796add05d1f4f616", "B": "e6be0572c5e529f9163f9f21d029ebb627e43d7225e46e2b9cee179d8fb58801"},
+    "exp0016_raw_c2": {"A": 0.125503, "B": 0.170568},
+    "window_ablation": "EXP-0016 K16 优于 K100，K64 与 K100 差异不明显（背景，不构成低频增量证据）",
+    "exp0031_k16_k4": "HOLD（A Δc2 +0.0012 / B −0.0014），仅重表示同一 16tick 窗口，未用更早历史"
+  },
+  "model": {
+    "short": "GRU(100,128) over [t-15,t]",
+    "long": "GRU(83,16) over 6x8-tick group means of f0-f82 from [t-63,t-16]",
+    "head": "Linear(144,1)",
+    "param_count": {"short_gru": 88320, "long_gru": 4848, "head": 145, "total": 93313, "delta_vs_baseline": 4864}
+  },
+  "resource_budget": {
+    "streaming_history_buffer": "64 tick x 100 dim x 4B = 25.6 KB/股；50 股 = 1.28 MB",
+    "training_batch": "1024 x 64 x 100 x 4B = 26.2 MB（K16 为 6.5 MB，约 4x）",
+    "gpu_vram": "<1 GB（GRU128+GRU16 极小）",
+    "streaming_latency": "GRU16 6 步 + 64tick 缓存维护可忽略；约 7-10s/日量级（同 K16 单模型）",
+    "capacity_note": "+4864 参数且信息范围扩到 64tick；若 M2-1 有增益需等容量/同 64tick 信息范围对照，不可直接归因低频聚合"
+  },
+  "alignment": "test_dual_scale.py 17/17 PASS；离线/在线逐元素 max abs diff = 0",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

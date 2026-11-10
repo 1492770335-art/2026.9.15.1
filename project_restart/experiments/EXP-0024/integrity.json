@@ -1,0 +1,17 @@
+{
+  "exp_id": "EXP-0024",
+  "checks": {
+    "zero_training": true,
+    "baseline_sha_verified": true,
+    "y2_unrounded_pearson_recomputed_from_frozen_ckpt": true,
+    "diff83_independent_implementation": true,
+    "offline_online_alignment_pass": true,
+    "test_cases_12_12": true,
+    "v1_zip_untouched": true,
+    "tc27_protocol_consistent": true,
+    "official_scoring_rounding_confirmed": true,
+    "no_other_experiments_started": true,
+    "external_processes_untouched": true
+  },
+  "notes": "基线 y2 未舍入 Pearson 由冻结 checkpoint 批量推理重算（非从综合 Score 逆推）：EXP-0016 K16 seed42 y2 = A 0.125503 / B 0.170568；EXP-0018 三 seed y2 融合 = A 0.137393 / B 0.179054。diff83 未修改原 K16 网络代码/权重。"
+}

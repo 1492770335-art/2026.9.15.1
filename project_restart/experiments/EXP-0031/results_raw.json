@@ -1,0 +1,87 @@
+{
+  "model": "MultiScaleK4GRU",
+  "folds": {
+    "A": {
+      "fold": "A",
+      "E": 2,
+      "inner_traj": [
+        {
+          "epoch": 2,
+          "train_loss": 0.9618886055887951,
+          "inner_stop_corr": 0.128922945330711
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.8703409116473914,
+          "inner_stop_corr": 0.10658709697832139
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.7981177717965066,
+          "inner_stop_corr": 0.1006111012380198
+        }
+      ],
+      "inner_bpe": 1372,
+      "full_steps": 3658,
+      "full_losses": [
+        1.0458755651381515,
+        1.016084876394063
+      ],
+      "raw_c2": 0.12670734849256352,
+      "daily_raw_c2": {
+        "8": 0.10638595296406657,
+        "9": 0.08212568757826137,
+        "10": 0.14276862887373856,
+        "11": 0.173385418534715
+      },
+      "control_raw_c2": 0.125503,
+      "delta_c2": 0.0012043484925635117,
+      "delta_c2_weighted": 0.0006021742462817559,
+      "streaming_batch_max_abs": 4.76837158203125e-07,
+      "ckpt_sha256": "c4dba073f892b1d644dac2f3ba2bfe0779f08e3ffe740bd85302cde863109e26",
+      "elapsed_sec": 527.8
+    },
+    "B": {
+      "fold": "B",
+      "E": 2,
+      "inner_traj": [
+        {
+          "epoch": 2,
+          "train_loss": 1.0469269080383488,
+          "inner_stop_corr": 0.15744043613108208
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.9617549459127622,
+          "inner_stop_corr": 0.13759540715833904
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8878319202214205,
+          "inner_stop_corr": 0.13039253682228719
+        }
+      ],
+      "inner_bpe": 2286,
+      "full_steps": 5488,
+      "full_losses": [
+        1.0568034779884792,
+        1.0284778245532173
+      ],
+      "raw_c2": 0.16916706894258215,
+      "daily_raw_c2": {
+        "12": 0.18368549297342457,
+        "13": 0.17060115623483335,
+        "14": 0.16590628581741584,
+        "15": 0.18015588486695083
+      },
+      "control_raw_c2": 0.170568,
+      "delta_c2": -0.0014009310574178424,
+      "delta_c2_weighted": -0.0007004655287089212,
+      "streaming_batch_max_abs": 2.980232238769531e-07,
+      "ckpt_sha256": "ea8072f05b97a4388126b3fd2e89aeafa5107538d93d1bbfe9d481030a6c26cc",
+      "elapsed_sec": 822.0
+    }
+  },
+  "peak_vram_allocated_mb": 18.2,
+  "peak_vram_reserved_mb": 1369.4
+}

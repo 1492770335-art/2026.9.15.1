@@ -1,0 +1,12 @@
+{
+  "exp_id": "EXP-0006",
+  "checks": {
+    "recipe_identical_to_EXP0005_except_seed": true,
+    "no_overwrite": "复用 A_s43 Model_0（hash 29275b92…）；其余全部新路径；MLP 产物未触碰",
+    "official_evaluator_used": true,
+    "frozen_baseline_untouched": true,
+    "no_queue_triggered": true,
+    "predictions_finite": true
+  },
+  "notes": "GRU seed 噪声（foldA σ=0.0024 / foldB σ=0.0066）明显大于 MLP（σ≈0.001）；foldB 的 σ 主要由 c2 驱动（c2 σ=0.0149）。逐日异质性（0.20–0.27）仍远超 seed 噪声。n=3 的 σ 估计不稳定，仅作粗略噪声范围。"
+}

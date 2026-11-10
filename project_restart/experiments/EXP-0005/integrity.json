@@ -1,0 +1,13 @@
+{
+  "exp_id": "EXP-0005",
+  "checks": {
+    "no_future_info": true,
+    "causal_window_within_day": true,
+    "day_boundary_reset": true,
+    "train_val_isolated_by_date": true,
+    "early_stop_uses_val_labels": "是（预注册；fold B 独立确认）",
+    "official_evaluator_used": true,
+    "predictions_finite": true
+  },
+  "notes": "窗口语义与 example/dataset.py 及官方 commit_v1 流式完全一致（后续由 tests/test_gru_train_stream_equiv.py 做训练/流式逐分一致性复核）。"
+}

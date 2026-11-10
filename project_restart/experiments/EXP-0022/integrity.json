@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0022",
+  "checks": {
+    "s0_freeze_manifest_written": true,
+    "s0_20day_engineering_regression": true,
+    "s1_split_no_overlap_fit_vs_stop": true,
+    "date16_19_not_used_for_epoch_selection": true,
+    "mkt_v1_unchanged": true,
+    "official_evaluator_used": true,
+    "no_s2_full_retrain": true,
+    "no_other_experiments": true,
+    "frozen_EXP0015_0021_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "S1 的 inner_stop(12-15) 与 full_fit(0-15) 有重叠但用途不同：inner_stop 仅用于选 E，full_fit 用于固定 E 全量重训；date16-19 完全未参与训练/选 E，仅最终一次官方评估。"
+}

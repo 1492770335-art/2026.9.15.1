@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "name": "tick1: 15 leading positions all-zero (134-dim)",
+      "pass": true
+    },
+    {
+      "name": "tick1: real position one-hot group != all-zero",
+      "pass": true
+    },
+    {
+      "name": "tick2: 14 leading positions all-zero",
+      "pass": true
+    },
+    {
+      "name": "tick2: real positions one-hot valid (each group sums to 1)",
+      "pass": true
+    },
+    {
+      "name": "tick15: 1 leading zero position",
+      "pass": true
+    },
+    {
+      "name": "tick16: no padding (16 real ticks)",
+      "pass": true
+    },
+    {
+      "name": "tick17: window has 16 real (no padding)",
+      "pass": true
+    },
+    {
+      "name": "real state0 one-hot [1,0,0] != padding all-zero",
+      "pass": true
+    },
+    {
+      "name": "offline/online alignment (max abs diff == 0)",
+      "pass": true
+    },
+    {
+      "name": "one-hot output finite",
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

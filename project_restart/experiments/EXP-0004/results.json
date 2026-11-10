@@ -1,0 +1,27 @@
+{
+  "exp_id": "EXP-0004",
+  "status": "completed",
+  "foldA": {
+    "train_dates": [0,1,2,3,4,5,6,7],
+    "val_dates": [8,9,10,11],
+    "pooled_official": {"corr0": 0.4042, "corr1": 0.2501, "corr2": 0.1209, "score": 0.2163},
+    "daily": {"8": 0.1943, "9": 0.1999, "10": 0.2365, "11": 0.2416},
+    "best_epochs": {"y0": 8, "y1": 6, "y2": 2}
+  },
+  "foldB": {
+    "train_dates": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "val_dates": [12,13,14,15],
+    "pooled_official": {"corr0": 0.4044, "corr1": 0.2537, "corr2": 0.1498, "score": 0.2319},
+    "daily": {"12": 0.2463, "13": 0.2281, "14": 0.2249, "15": 0.2447},
+    "best_epochs": {"y0": 12, "y1": 10, "y2": 4}
+  },
+  "comparison": {
+    "foldA": {"official_mlp_2ep": 0.1913, "ridge": 0.1929, "official_gru_2ep": 0.2012, "strong_mlp": 0.2163},
+    "foldB": {"official_mlp_2ep": 0.2105, "ridge": 0.2051, "official_gru_2ep": 0.2176, "strong_mlp": 0.2319},
+    "delta_vs_official_mlp": {"foldA": 0.025, "foldB": 0.0214},
+    "conclusion": "训练强度是当前最大变量：同结构强配方双折 +0.021~0.025；c2 早停 epoch 2-4 即见顶（y2 是 0.5 权重瓶颈）"
+  },
+  "resources": {"elapsed_sec": {"foldA": 62.4, "foldB": 84.0}, "peak_vram_mb": 1526.1},
+  "artifacts": ["experiments/EXP-0004/commit_mlpstrong_foldA/", "experiments/EXP-0004/commit_mlpstrong_foldB/", "experiments/EXP-0004/results_raw.json"],
+  "script_sha256": "mlp_strong.py（修复版）"
+}

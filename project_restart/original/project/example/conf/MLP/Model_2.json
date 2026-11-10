@@ -1,0 +1,15 @@
+{
+  "model": "MLP",
+  "name": "Model_2",
+  "data": "../data/public.parquet",
+  "output": "output",
+  "label": 2,
+  "hidden": 128,
+  "window": null,
+  "epochs": 2,
+  "batch_size": 8192,
+  "lr": 1e-4,
+  "device": "cuda:1",
+  "num_threads": 4,
+  "seed": 42
+}

@@ -1,0 +1,80 @@
+{
+  "cases": [
+    {
+      "name": "short_gru params == 88320",
+      "pass": true
+    },
+    {
+      "name": "long_gru params == 4848 (GRU 83->16)",
+      "pass": true
+    },
+    {
+      "name": "head params == 145 (Linear 144->1)",
+      "pass": true
+    },
+    {
+      "name": "total params == 93313 (baseline 88449, delta +4864)",
+      "pass": true
+    },
+    {
+      "name": "tick1 (n=0): long empty, lengths=0, all vc=0",
+      "pass": true
+    },
+    {
+      "name": "tick2 (n=1): long empty, lengths=0",
+      "pass": true
+    },
+    {
+      "name": "tick16 (n=15): long empty (long window [t-63,t-16] all <0)",
+      "pass": true
+    },
+    {
+      "name": "tick17 (n=16): long 1 valid (group5 only, vc5=1)",
+      "pass": true
+    },
+    {
+      "name": "tick63 (n=62): group0 partial vc=7, groups1-5 vc=8, lengths=6",
+      "pass": true
+    },
+    {
+      "name": "tick64 (n=63): all 6 groups full vc=8",
+      "pass": true
+    },
+    {
+      "name": "tick65 (n=64): all 6 groups full vc=8 (sliding)",
+      "pass": true
+    },
+    {
+      "name": "denominator = valid count: group5 mean = (4+6)/2 = 5 (not /8)",
+      "pass": true
+    },
+    {
+      "name": "all-empty -> lengths=0 (long rep will be zeros)",
+      "pass": true
+    },
+    {
+      "name": "short[48:64] and long[0:48] disjoint (by window slicing)",
+      "pass": true
+    },
+    {
+      "name": "causal: future tick4 perturb does not change ticks 0..3 predictions",
+      "pass": true
+    },
+    {
+      "name": "offline/online alignment (max abs diff <= 1e-5)",
+      "pass": true
+    },
+    {
+      "name": "predictions finite",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "param_count": {
+    "short_gru": 88320,
+    "long_gru": 4848,
+    "head": 145,
+    "total": 93313
+  },
+  "offline_online_max_abs": 0.0
+}

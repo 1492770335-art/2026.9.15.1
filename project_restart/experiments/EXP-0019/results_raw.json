@@ -1,0 +1,262 @@
+{
+  "mkt_A": {
+    "fold": "A",
+    "per_target": {
+      "y0": {
+        "E": 6,
+        "total_opt_steps_full": 10974,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.7858630446951738,
+            "inner_stop_corr": 0.43504914512920606
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.758323582290279,
+            "inner_stop_corr": 0.4444604983945339
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.7360596258081421,
+            "inner_stop_corr": 0.4454741028630059
+          },
+          {
+            "epoch": 8,
+            "train_loss": 0.7128045810311311,
+            "inner_stop_corr": 0.43742361161843135
+          },
+          {
+            "epoch": 10,
+            "train_loss": 0.6902909939610289,
+            "inner_stop_corr": 0.4300162371711364
+          }
+        ],
+        "full_train_losses": [
+          0.8392450453635911,
+          0.7994047642072449,
+          0.784242990518831,
+          0.7722699275152253,
+          0.7607592103089913,
+          0.749940277543649
+        ]
+      },
+      "y1": {
+        "E": 2,
+        "total_opt_steps_full": 3658,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.9061183863051493,
+            "inner_stop_corr": 0.3019770879339791
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.8130253311142016,
+            "inner_stop_corr": 0.27286476777601093
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.7321076943486615,
+            "inner_stop_corr": 0.24905168100740585
+          }
+        ],
+        "full_train_losses": [
+          0.9733993299835247,
+          0.9247078206245555
+        ]
+      },
+      "y2": {
+        "E": 2,
+        "total_opt_steps_full": 3658,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.905781910902277,
+            "inner_stop_corr": 0.1467307439217803
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.7953594066213251,
+            "inner_stop_corr": 0.1168903285152923
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.720448433970563,
+            "inner_stop_corr": 0.1065407972291136
+          }
+        ],
+        "full_train_losses": [
+          1.021750667152478,
+          0.959811325016203
+        ]
+      }
+    },
+    "pooled_official": {
+      "corr0": 0.4637,
+      "corr1": 0.3033,
+      "corr2": 0.1082,
+      "score": 0.2378
+    },
+    "daily": {
+      "8": {
+        "corr0": 0.4529,
+        "corr1": 0.2896,
+        "corr2": 0.1137,
+        "score": 0.2343
+      },
+      "9": {
+        "corr0": 0.4718,
+        "corr1": 0.3111,
+        "corr2": 0.1052,
+        "score": 0.2403
+      },
+      "10": {
+        "corr0": 0.4653,
+        "corr1": 0.3075,
+        "corr2": 0.0942,
+        "score": 0.2324
+      },
+      "11": {
+        "corr0": 0.4658,
+        "corr1": 0.3131,
+        "corr2": 0.1331,
+        "score": 0.2537
+      }
+    },
+    "extra": {
+      "no_date8": {
+        "corr0": 0.4677,
+        "corr1": 0.3103,
+        "corr2": 0.111,
+        "score": 0.2421
+      }
+    },
+    "delta_vs_control": -0.0012,
+    "elapsed_sec": 1199.1,
+    "peak_vram_mb": 1672.3
+  },
+  "mkt_B": {
+    "fold": "B",
+    "per_target": {
+      "y0": {
+        "E": 4,
+        "total_opt_steps_full": 10976,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.8120940455516644,
+            "inner_stop_corr": 0.46562515787341663
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.7861327010768234,
+            "inner_stop_corr": 0.4718133214063707
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.7638726567731091,
+            "inner_stop_corr": 0.467301211012538
+          },
+          {
+            "epoch": 8,
+            "train_loss": 0.7418405872702818,
+            "inner_stop_corr": 0.45826406835642586
+          }
+        ],
+        "full_train_losses": [
+          0.8338243710854879,
+          0.7966218145129998,
+          0.7824006139637069,
+          0.7712778777548805
+        ]
+      },
+      "y1": {
+        "E": 2,
+        "total_opt_steps_full": 5488,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.9402759240338441,
+            "inner_stop_corr": 0.31862836608236295
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.8518075390425741,
+            "inner_stop_corr": 0.26283411917747673
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.7802075900955916,
+            "inner_stop_corr": 0.21653565239147324
+          }
+        ],
+        "full_train_losses": [
+          0.9583981957467778,
+          0.9131507773021377
+        ]
+      },
+      "y2": {
+        "E": 2,
+        "total_opt_steps_full": 5488,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.9897363481047152,
+            "inner_stop_corr": 0.0990253195717671
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.8787758057518884,
+            "inner_stop_corr": 0.06382271519121552
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.788310977414829,
+            "inner_stop_corr": 0.08389373767072551
+          }
+        ],
+        "full_train_losses": [
+          1.0359728571097824,
+          0.9796053683887014
+        ]
+      }
+    },
+    "pooled_official": {
+      "corr0": 0.4811,
+      "corr1": 0.3453,
+      "corr2": 0.1922,
+      "score": 0.2959
+    },
+    "daily": {
+      "12": {
+        "corr0": 0.4946,
+        "corr1": 0.3715,
+        "corr2": 0.2618,
+        "score": 0.3413
+      },
+      "13": {
+        "corr0": 0.4706,
+        "corr1": 0.3423,
+        "corr2": 0.1974,
+        "score": 0.2955
+      },
+      "14": {
+        "corr0": 0.4868,
+        "corr1": 0.3569,
+        "corr2": 0.2021,
+        "score": 0.3055
+      },
+      "15": {
+        "corr0": 0.4732,
+        "corr1": 0.3219,
+        "corr2": 0.1853,
+        "score": 0.2839
+      }
+    },
+    "extra": {},
+    "delta_vs_control": 0.0347,
+    "elapsed_sec": 1342.5,
+    "peak_vram_mb": 1676.0
+  }
+}

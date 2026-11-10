@@ -1,0 +1,24 @@
+{
+  "exp_id": "EXP-0025",
+  "name": "TC-38 Gate D1：y2-only K16-GRU + diff83（183 维）seed42 × Fold A/B",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "single_variable": "是否追加 83 维相邻 tick 差分（diff83，输入 100→183）",
+  "control": "EXP-0016 K16-GRU seed42 y2（raw c2 A 0.125503 / B 0.170568）",
+  "folds": {
+    "A": {"E": 2, "full_steps": 3658, "raw_c2": 0.100687, "control_raw_c2": 0.125503, "delta_c2": -0.024816, "delta_c2_weighted": -0.012408,
+          "daily": {"8": {"d1": 0.077386, "control": 0.105482, "delta": -0.028096},
+                    "9": {"d1": 0.053803, "control": 0.083431, "delta": -0.029628},
+                    "10": {"d1": 0.123610, "control": 0.140525, "delta": -0.016915},
+                    "11": {"d1": 0.150712, "control": 0.170735, "delta": -0.020023}}},
+    "B": {"E": 2, "full_steps": 5488, "raw_c2": 0.145129, "control_raw_c2": 0.170568, "delta_c2": -0.025439, "delta_c2_weighted": -0.012720,
+          "daily": {"12": {"d1": 0.153283, "control": 0.172807, "delta": -0.019524},
+                    "13": {"d1": 0.152922, "control": 0.181265, "delta": -0.028343},
+                    "14": {"d1": 0.140002, "control": 0.167064, "delta": -0.027061},
+                    "15": {"d1": 0.136503, "control": 0.184223, "delta": -0.047720}}}
+  },
+  "streaming_batch_consistency": {"A_max_abs": 1.2517e-06, "B_max_abs": 1.7881e-06, "pass": true},
+  "verdict": "HOLD / diff83 支线终止：两折 Δc2 均显著为负（A −0.0248 / B −0.0254），8 个开发日逐日 Δ 全部为负，未达晋级门槛（≥+0.008），保留负结果",
+  "bugfix_record": "D1 脚本 load_block_dates 遗漏 tick_in_day 的 //50 导致窗口负索引；修复后流式-批量一致由 1.26 → 1e-6，修正后结论不变（Δc2 仍为负）。该 bug 仅存在于本 D1 脚本，不污染冻结 EXP-0015~0023 与 v1。",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

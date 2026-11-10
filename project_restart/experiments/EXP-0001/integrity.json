@@ -1,0 +1,13 @@
+{
+  "exp_id": "EXP-0001",
+  "checks": {
+    "no_future_info": true,
+    "train_val_isolated_by_date": true,
+    "features_only_from_train_dates": true,
+    "no_val_labels_in_fitting": true,
+    "predictions_finite": true,
+    "streaming_consistency": "official Evaluator reproduced closed-form score 0.1929 exactly",
+    "reset_behavior": "stateless model (reset=pass); official evaluator calls reset once per day per model (verified in tests/)"
+  },
+  "notes": "gap1 敏感性（去掉与 val 相邻的 train 日）分数不降反微升，说明线性建模路径下无跨日标签泄漏证据；horizon 仍未由官方声明，结论为 INFERRED。"
+}

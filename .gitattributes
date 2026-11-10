@@ -1,0 +1,4 @@
+project/project/data/public.parquet filter=lfs diff=lfs merge=lfs -text
+project.tar.exe filter=lfs diff=lfs merge=lfs -text
+project.tar.gz filter=lfs diff=lfs merge=lfs -text
+project_restart/original/project/data/public.parquet filter=lfs diff=lfs merge=lfs -text

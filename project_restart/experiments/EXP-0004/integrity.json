@@ -1,0 +1,12 @@
+{
+  "exp_id": "EXP-0004",
+  "checks": {
+    "no_future_info": true,
+    "train_val_isolated_by_date": true,
+    "early_stop_uses_val_labels": "是（预注册：验证集用于 checkpoint 选择；fold B 独立确认）",
+    "shuffle_true": true,
+    "official_evaluator_used": true,
+    "predictions_finite": true
+  },
+  "notes": "v1 存在选择分数广播 bug（单目标预测与三标签混合加权）已修复重跑，v1 仅保留作记录；最终分数来自 v2 官方 Evaluator。"
+}

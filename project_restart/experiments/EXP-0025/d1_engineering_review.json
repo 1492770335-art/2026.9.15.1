@@ -1,0 +1,16 @@
+{
+  "training_script_sha256": "48f587c1fdb208c5f0f91672016e49750ad89621f33f3461b2b7ccc5e5fb5f74",
+  "d1_ckpt_sha256": {
+    "A": "a7d194c4c796456c1f7317d4dd6a42b984517c5271d42fed61864acc70f62579",
+    "B": "4b5f633d1cb315428d7d5d2b984b7511f8e9358d811dbc2d6efa5aaddad37750"
+  },
+  "tick_in_day_has_div50": true,
+  "make_batch_source": "gru_strong.make_batch (shared with EXP-0015..0023; uses tick_in_day from load_block_dates)",
+  "cudnn_batchsize_nondeterminism": {
+    "batch1_vs_50_max_abs": 0.00032842159271240234,
+    "batch50_vs_8192_max_abs": 5.960464477539063e-08,
+    "batch1_vs_8192_max_abs": 0.00032836198806762695
+  },
+  "official_evaluator_used_in_D1": false,
+  "note": "D1 \u4ec5\u505a\u4e86\u6279\u91cf\u9884\u6d4b\uff08make_batch\uff09\u4e0e\u624b\u5de5\u6d41\u5f0f\u6a21\u62df\uff08streaming_vs_batch \u590d\u523b\u63d0\u4ea4\u7f51\u7edc predict \u7684 prev_raw+history \u903b\u8f91\uff09\uff0c\u672a\u6784\u5efa\u4e09\u76ee\u6807 commit\u3001\u672a\u8fd0\u884c\u5b98\u65b9 Evaluator\uff08\u5b98\u65b9\u63a5\u53e3\u9700 3 \u4e2a\u6a21\u578b\uff0cD1 \u4ec5 y2\uff09\u3002\u6545\u300c\u5b98\u65b9\u6d41\u5f0f\u8bc4\u5206\u300d\u672a\u5728 D1 \u6267\u884c\uff0c\u53ea\u6709\u624b\u5de5\u6d41\u5f0f\u4e00\u81f4\u6027\u9a8c\u8bc1\u3002"
+}

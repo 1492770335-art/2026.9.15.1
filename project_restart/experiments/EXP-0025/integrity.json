@@ -1,0 +1,17 @@
+{
+  "exp_id": "EXP-0025",
+  "checks": {
+    "only_y2_seed42_fold_AB": true,
+    "four_training_phases": true,
+    "tc27_inner_earlystop": true,
+    "control_align_same_protocol": true,
+    "streaming_batch_consistency_pass": true,
+    "diff83_causal_no_future": true,
+    "negative_result_preserved": true,
+    "no_lag_column_seed_modification": true,
+    "frozen_EXP0015_0024_untouched": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "D1 仅训练 y2（未训 y0/y1/seed43/44/clip/类别/多尺度/双头）。修复 tick_in_day//50 bug 后流式-批量一致 ~1e-6。两折负结果如实保留，未为追分修改差分时距/列集合/种子。"
+}

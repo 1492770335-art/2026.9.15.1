@@ -1,0 +1,50 @@
+{
+  "cases": [
+    {
+      "name": "output dim == 134",
+      "pass": true
+    },
+    {
+      "name": "continuous cols preserved (0..82 == X[:,:83])",
+      "pass": true
+    },
+    {
+      "name": "float32 dtype",
+      "pass": true
+    },
+    {
+      "name": "one-hot correct for all 17 cols x 150 rows",
+      "pass": true
+    },
+    {
+      "name": "state 0 -> [1,0,0]",
+      "pass": true
+    },
+    {
+      "name": "state 1 -> [0,1,0] (f84 row1)",
+      "pass": true
+    },
+    {
+      "name": "state 2 -> [0,0,1] (f84 row2)",
+      "pass": true
+    },
+    {
+      "name": "no NaN/Inf",
+      "pass": true
+    },
+    {
+      "name": "per-row stateless (reorder == reorder of outputs)",
+      "pass": true
+    },
+    {
+      "name": "day reset stateless (idempotent)",
+      "pass": true
+    },
+    {
+      "name": "offline/online alignment (max abs diff == 0)",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "offline_online_max_abs": 0.0
+}

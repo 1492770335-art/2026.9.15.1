@@ -1,0 +1,15 @@
+{
+  "exp_id": "EXP-0020",
+  "name": "TC-31/Gate H0：分目标路由零训练验证（y0/y1=MarketGRU seed42，y2=K16 三 seed 等权）",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "routing": {"y0": "EXP-0019 MarketGRU seed42", "y1": "EXP-0019 MarketGRU seed42", "y2": "EXP-0018 K16 3-seed 等权"},
+  "foldA": {"pooled": {"c0": 0.4637, "c1": 0.3033, "c2": 0.1374, "score": 0.2524}, "daily": {"8": 0.2315, "9": 0.2414, "10": 0.2616, "11": 0.2777}, "no_date8": 0.2593},
+  "foldB": {"pooled": {"c0": 0.4811, "c1": 0.3453, "c2": 0.1791, "score": 0.2893}, "daily": {"12": 0.3071, "13": 0.2877, "14": 0.287, "15": 0.2924}},
+  "vs_K16_fusion_0_2495_0_2691": {"A": 0.0029, "B": 0.0202},
+  "full_range_insample_A": {"c0": 0.4898, "c1": 0.3544, "c2": 0.2244, "score": 0.3165, "note": "训练日期上评分，仅工程回归诊断，非 OOS"},
+  "engineering": {"latency_sec_day": 17.9, "peak_vram_mb": 206.8, "official_streaming_ok": true, "reset_ok": true, "output_shape_ok": true},
+  "verdict": "HOLD as research candidate（post-hoc 探索性组合，存在适应选择偏差）；K16 三 seed 全目标融合仍为当前提交候选",
+  "next": "若 H0 成立且需验证，待授权 Gate H1：市场 y0/y1 的 seed43/44 配对复验（仅训练 8 个 target-fold）",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

@@ -1,0 +1,24 @@
+{
+  "exp_id": "EXP-0016",
+  "name": "EXP-0007-NP 新协议窗口消融 K∈{16,64}（seed42，K100 参照=EXP-0015）",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "K100_reference": {"A": {"c0": 0.4518, "c1": 0.2850, "c2": 0.0938, "score": 0.2228}, "B": {"c0": 0.4468, "c1": 0.2847, "c2": 0.1564, "score": 0.2530}},
+  "K16": {
+    "foldA": {"E": [6, 2, 2], "pooled": {"c0": 0.4501, "c1": 0.2874, "c2": 0.1255, "score": 0.2390}, "delta_vs_K100": 0.0162, "daily": {"8": 0.2218, "9": 0.2187, "10": 0.2484, "11": 0.2680}, "no_date8": 0.2441, "latency_s_day": 7.9, "peak_vram_mb": 694.5, "elapsed_sec": 1594},
+    "foldB": {"E": [4, 2, 2], "pooled": {"c0": 0.4439, "c1": 0.2905, "c2": 0.1706, "score": 0.2612}, "delta_vs_K100": 0.0082, "daily": {"12": 0.2714, "13": 0.2658, "14": 0.2547, "15": 0.2703}, "latency_s_day": 7.6, "peak_vram_mb": 698.2, "elapsed_sec": 2491}
+  },
+  "K64": {
+    "foldA": {"E": [6, 2, 2], "pooled": {"c0": 0.4517, "c1": 0.2850, "c2": 0.0947, "score": 0.2232}, "delta_vs_K100": 0.0004, "daily": {"8": 0.2096, "9": 0.2115, "10": 0.2364, "11": 0.2357}, "no_date8": 0.2268, "latency_s_day": 13.4, "peak_vram_mb": 2641.7, "elapsed_sec": 4837},
+    "foldB": {"E": [4, 2, 2], "pooled": {"c0": 0.4465, "c1": 0.2848, "c2": 0.1578, "score": 0.2536}, "delta_vs_K100": 0.0006, "daily": {"12": 0.2554, "13": 0.2586, "14": 0.2464, "15": 0.2722}, "latency_s_day": 6.8, "peak_vram_mb": 2645.4, "elapsed_sec": 6294}
+  },
+  "summary": {
+    "K16_delta": {"A": 0.0162, "B": 0.0082},
+    "K64_delta": {"A": 0.0004, "B": 0.0006},
+    "c2_change_K16_vs_K100": {"A": 0.0317, "B": 0.0142},
+    "conclusion": "K16 双折一致正增益且主要来自 c2；K64 与 K100 无实质差异；K16 在相同训练预算下收敛更快/过拟合更少（y2 最受益）"
+  },
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "script_sha256": {"exp0016_window.py": "f52b7673e4a1dc3abdf0b09e22cf5688b39d9cdb07526ebf021c8b374ee56787", "test_window_alignment.py": "见 tests/"},
+  "artifacts": ["experiments/EXP-0016/commit_K16_{A,B}/", "experiments/EXP-0016/commit_K64_{A,B}/", "experiments/EXP-0016/ckpt_K*_*/", "experiments/EXP-0016/results_raw.json"]
+}

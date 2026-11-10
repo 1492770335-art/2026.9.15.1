@@ -1,0 +1,15 @@
+{
+  "exp_id": "EXP-0026",
+  "checks": {
+    "zero_training": true,
+    "d1_tick_in_day_div50_confirmed": true,
+    "d1_official_evaluator_not_run_honest": true,
+    "clip_diag_inner_train_only_for_threshold": true,
+    "no_clip_threshold_search": true,
+    "input_vs_gradient_clip_distinguished": true,
+    "frozen_EXP0015_0025_untouched": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "任务一复核：修复 //50 覆盖 D1 全部路径；但 D1 未运行官方 Evaluator（仅手工流式模拟），如实标注。任务二诊断：f0-f82 存在客观重尾（max~857-955，0.041%>10σ），但训练日志无失稳；建议 GO_CLIP_D1（条件预注册，±10 固定阈值，不搜索不训练）。"
+}

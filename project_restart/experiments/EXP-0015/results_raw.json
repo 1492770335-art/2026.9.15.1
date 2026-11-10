@@ -1,0 +1,341 @@
+{
+  "A": {
+    "fold": "A",
+    "inner_train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "inner_stop": [
+      6,
+      7
+    ],
+    "full_train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "outer_val": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "per_target": {
+      "y0": {
+        "E": 6,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.7974563738526322,
+            "inner_stop_corr": 0.4273647692731721
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.770588133285542,
+            "inner_stop_corr": 0.43581551775952987
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.7503221476183288,
+            "inner_stop_corr": 0.43783626030454836
+          },
+          {
+            "epoch": 8,
+            "train_loss": 0.7294479927531813,
+            "inner_stop_corr": 0.4310658895618899
+          },
+          {
+            "epoch": 10,
+            "train_loss": 0.7091063348631069,
+            "inner_stop_corr": 0.4213427151749941
+          }
+        ],
+        "full_train_losses": [
+          0.8524002431516883,
+          0.8105425040067217,
+          0.7957151932829939,
+          0.7844475443618083,
+          0.7741845960985273,
+          0.7642086446347635
+        ],
+        "inner_batches_per_epoch": 1372,
+        "full_batches_per_epoch": 1829,
+        "total_opt_steps_full": 10974
+      },
+      "y1": {
+        "E": 2,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.9316387584636572,
+            "inner_stop_corr": 0.2812004389782045
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.8368878293730058,
+            "inner_stop_corr": 0.2470504606562923
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.7465449823921679,
+            "inner_stop_corr": 0.1944781172684364
+          }
+        ],
+        "full_train_losses": [
+          0.9921823610409475,
+          0.9510903865552848
+        ],
+        "inner_batches_per_epoch": 1372,
+        "full_batches_per_epoch": 1829,
+        "total_opt_steps_full": 3658
+      },
+      "y2": {
+        "E": 2,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.9350097501865312,
+            "inner_stop_corr": 0.10237727383879595
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.7407825392781754,
+            "inner_stop_corr": 0.0797573705935847
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.6210272366085204,
+            "inner_stop_corr": 0.07853276311955117
+          }
+        ],
+        "full_train_losses": [
+          1.0439719208934604,
+          0.9890972967200283
+        ],
+        "inner_batches_per_epoch": 1372,
+        "full_batches_per_epoch": 1829,
+        "total_opt_steps_full": 3658
+      }
+    },
+    "pooled_official": {
+      "corr0": 0.4518,
+      "corr1": 0.285,
+      "corr2": 0.0938,
+      "score": 0.2228
+    },
+    "daily": {
+      "8": {
+        "corr0": 0.4391,
+        "corr1": 0.2745,
+        "corr2": 0.0811,
+        "score": 0.2107
+      },
+      "9": {
+        "corr0": 0.4556,
+        "corr1": 0.2776,
+        "corr2": 0.0747,
+        "score": 0.2117
+      },
+      "10": {
+        "corr0": 0.4587,
+        "corr1": 0.285,
+        "corr2": 0.1074,
+        "score": 0.2309
+      },
+      "11": {
+        "corr0": 0.4566,
+        "corr1": 0.3079,
+        "corr2": 0.1069,
+        "score": 0.2372
+      }
+    },
+    "batched_check_first_val_day": {
+      "corr0": 0.4391,
+      "corr1": 0.2745,
+      "corr2": 0.0811,
+      "raw_score": 0.2107342318922345,
+      "score": 0.2107
+    },
+    "elapsed_sec": 6475.0,
+    "peak_vram_mb": 4103.3
+  },
+  "B": {
+    "fold": "B",
+    "inner_train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "inner_stop": [
+      10,
+      11
+    ],
+    "full_train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "outer_val": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "per_target": {
+      "y0": {
+        "E": 4,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.8250877689293613,
+            "inner_stop_corr": 0.4542169562534507
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.7999564427392784,
+            "inner_stop_corr": 0.46321941882087797
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.7797337087487076,
+            "inner_stop_corr": 0.4605595769098378
+          },
+          {
+            "epoch": 8,
+            "train_loss": 0.7595078906868505,
+            "inner_stop_corr": 0.4522290600171294
+          }
+        ],
+        "full_train_losses": [
+          0.8474403004889316,
+          0.8087184701835999,
+          0.7951168320440293,
+          0.7847242106499596
+        ],
+        "inner_batches_per_epoch": 2286,
+        "full_batches_per_epoch": 2744,
+        "total_opt_steps_full": 10976
+      },
+      "y1": {
+        "E": 2,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 0.9667688022067487,
+            "inner_stop_corr": 0.3021793144772968
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.8721527775962559,
+            "inner_stop_corr": 0.24038392207359732
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.7945341726396932,
+            "inner_stop_corr": 0.19674311927815663
+          }
+        ],
+        "full_train_losses": [
+          0.9784892729197592,
+          0.9380349058344342
+        ],
+        "inner_batches_per_epoch": 2286,
+        "full_batches_per_epoch": 2744,
+        "total_opt_steps_full": 5488
+      },
+      "y2": {
+        "E": 2,
+        "inner_traj": [
+          {
+            "epoch": 2,
+            "train_loss": 1.0191534976933356,
+            "inner_stop_corr": 0.10642639606693928
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.8215704930736706,
+            "inner_stop_corr": 0.040871095183358436
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.7016575430211321,
+            "inner_stop_corr": 0.023928201911369892
+          }
+        ],
+        "full_train_losses": [
+          1.054466916907094,
+          0.9984367605863071
+        ],
+        "inner_batches_per_epoch": 2286,
+        "full_batches_per_epoch": 2744,
+        "total_opt_steps_full": 5488
+      }
+    },
+    "pooled_official": {
+      "corr0": 0.4468,
+      "corr1": 0.2847,
+      "corr2": 0.1564,
+      "score": 0.253
+    },
+    "daily": {
+      "12": {
+        "corr0": 0.4652,
+        "corr1": 0.304,
+        "corr2": 0.1369,
+        "score": 0.2527
+      },
+      "13": {
+        "corr0": 0.4346,
+        "corr1": 0.2858,
+        "corr2": 0.1688,
+        "score": 0.2571
+      },
+      "14": {
+        "corr0": 0.4418,
+        "corr1": 0.2786,
+        "corr2": 0.1557,
+        "score": 0.2498
+      },
+      "15": {
+        "corr0": 0.452,
+        "corr1": 0.2832,
+        "corr2": 0.182,
+        "score": 0.2664
+      }
+    },
+    "batched_check_first_val_day": {
+      "corr0": 0.4652,
+      "corr1": 0.304,
+      "corr2": 0.1369,
+      "raw_score": 0.2526998491822137,
+      "score": 0.2527
+    },
+    "elapsed_sec": 9505.4,
+    "peak_vram_mb": 4137.2
+  }
+}

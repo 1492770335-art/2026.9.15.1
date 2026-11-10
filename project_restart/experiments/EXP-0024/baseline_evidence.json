@@ -1,0 +1,107 @@
+{
+  "core_files_sha256": {
+    "public.parquet": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+    "README.md": "c470cd532fee485a0458bdf62b9623d88d905cad85e193c9e6d08dfd38102f3a",
+    "evaluate.py": "26f7a967b202b4bf9b51d8b160d3b42de116d96082530624638e16067beae6b0"
+  },
+  "tc34_v1_zip_sha256": "6a3fba9931831e1d92e3681f4a67f76d712cab530346e3912b16d6dbe094a4d5",
+  "tc27_protocol": {
+    "A": {
+      "inner_fit": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "inner_stop": [
+        6,
+        7
+      ],
+      "full_fit": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "outer_val": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "B": {
+      "inner_fit": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "inner_stop": [
+        10,
+        11
+      ],
+      "full_fit": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "outer_val": [
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  },
+  "official_scoring": "Score = round(0.2*raw_c0 + 0.3*raw_c1 + 0.5*raw_c2, 4); corr0/1/2 displayed rounded (R0 confirmed)",
+  "y2_baselines": {
+    "EXP0016_K16_seed42_y2_A": {
+      "c2_unrounded": 0.12550348862781902,
+      "c2_rounded": 0.1255,
+      "n_pred": 936250
+    },
+    "EXP0016_K16_seed42_y2_B": {
+      "c2_unrounded": 0.1705682298544689,
+      "c2_rounded": 0.1706,
+      "n_pred": 936250
+    },
+    "EXP0018_ens3_y2_A": {
+      "c2_unrounded": 0.1373928431498992,
+      "c2_rounded": 0.1374,
+      "n_pred": 936250
+    },
+    "EXP0018_ens3_y2_B": {
+      "c2_unrounded": 0.17905408846969822,
+      "c2_rounded": 0.1791,
+      "n_pred": 936250
+    }
+  },
+  "y2_checkpoint_sha256": {
+    "EXP0016_K16_seed42_y2_A": "1415263f20dc5ecc2dee1f019263866fe4078eddeca6e502796add05d1f4f616",
+    "EXP0016_K16_seed42_y2_B": "e6be0572c5e529f9163f9f21d029ebb627e43d7225e46e2b9cee179d8fb58801",
+    "EXP0018_ens3_y2_A": "eb7b52b978ffb4f8d22bf74f6315774442a7a2db5d422006f31dd7de7c3eecdd",
+    "EXP0018_ens3_y2_B": "3e231eca88ffa6f0917f0f51cf9edc60e5408bc3ef45ddd0707d2a4cdee67138"
+  }
+}

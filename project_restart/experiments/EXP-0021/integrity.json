@@ -1,0 +1,17 @@
+{
+  "exp_id": "EXP-0021",
+  "checks": {
+    "r0_rounding_audit_pass": true,
+    "only_8_target_fold_trained": true,
+    "no_market_y2": true,
+    "new_inner_earlystop_protocol": true,
+    "outer_val_eval_only": true,
+    "mkt_v1_unchanged": true,
+    "y2_unchanged": true,
+    "official_evaluator_used": true,
+    "no_other_experiments": true,
+    "frozen_EXP0015_0020_untouched": true,
+    "external_thesis_processes_untouched": true
+  },
+  "notes": "metrics.py 舍入顺序已修复对齐官方（score 用未舍入 corr 加权）；R0 复核官方 0.2893 无异常。三 seed 市场路由 9 网络经官方流式评估，逐日全胜对照。"
+}

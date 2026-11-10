@@ -1,0 +1,15 @@
+{
+  "exp_id": "EXP-0020",
+  "checks": {
+    "zero_training": true,
+    "fixed_routing_no_tuning": true,
+    "no_val_label_param_learning": true,
+    "alignment_verified": "各目标 corr 与来源模型一致（A c0 0.4637/c1 0.3033/c2 0.1374；B 0.4811/0.3453/0.1791）",
+    "official_evaluator_streaming": true,
+    "full_range_engineering_only": true,
+    "no_other_experiments": true,
+    "frozen_artifacts_untouched": true,
+    "external_thesis_processes_untouched": true
+  },
+  "notes": "5 个底层网络（2 market + 3 K16）经单一 network.py 定义 MarketGRU/GRUEnsemble 两类，官方 Evaluator 按 Model_0/1/2 路由正确；reset 每模型每日调用；输出 (50,1) 且 finite。"
+}

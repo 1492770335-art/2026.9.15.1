@@ -1,0 +1,36 @@
+{
+  "exp_id": "EXP-0015",
+  "name": "TC-27 内部早停协议实现 + 新协议 K100 strong-GRU seed42",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（训练启动）与 deepseek-flash（监控/收尾）——会话模型路由中途切换，已分别记录",
+  "foldA": {
+    "inner_train": [0,1,2,3,4,5], "inner_stop": [6,7], "full_train": [0,1,2,3,4,5,6,7], "outer_val": [8,9,10,11],
+    "E_per_target": {"y0": 6, "y1": 2, "y2": 2},
+    "total_opt_steps": {"y0": 10974, "y1": 3658, "y2": 3658},
+    "pooled_official": {"corr0": 0.4518, "corr1": 0.285, "corr2": 0.0938, "score": 0.2228},
+    "daily": {"8": 0.2107, "9": 0.2117, "10": 0.2309, "11": 0.2372},
+    "batched_check_day8": 0.2107
+  },
+  "foldB": {
+    "inner_train": [0,1,2,3,4,5,6,7,8,9], "inner_stop": [10,11], "full_train": [0,1,2,3,4,5,6,7,8,9,10,11], "outer_val": [12,13,14,15],
+    "E_per_target": {"y0": 4, "y1": 2, "y2": 2},
+    "total_opt_steps": {"y0": 10976, "y1": 5488, "y2": 5488},
+    "pooled_official": {"corr0": 0.4468, "corr1": 0.2847, "corr2": 0.1564, "score": 0.2530},
+    "daily": {"12": 0.2527, "13": 0.2571, "14": 0.2498, "15": 0.2664},
+    "batched_check_day12": 0.2527
+  },
+  "old_vs_new_protocol": {
+    "foldA": {"old": 0.2228, "new": 0.2228, "delta": 0.0, "note": "E 相同(6/2/2)，4 位小数完全一致"},
+    "foldB": {"old": 0.2531, "new": 0.2530, "delta": -0.0001, "note": "旧协议 y0 E=6 vs 新协议 y0 E=4（内层 stop 峰值在 ep4），c0 0.4473→0.4468，差 0.0001 为舍入级"},
+    "conclusion": "新协议复现旧协议分数（最大差 0.0001），证明外层验证标签未给旧模型带来实质性选择收益；新协议消除方法学隐患，为 K16/K64 公平对照确立干净 K100 基线"
+  },
+  "fairness_note": "旧 vs 新协议差不能用于评估窗口长度增益；K16/K64 必须在同新协议下训练后才能与 K100 公平比较",
+  "resources": {"elapsed_sec": {"foldA": 6475, "foldB": 9505}, "peak_vram_mb": 4137},
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "artifacts": [
+    "experiments/EXP-0015/ckpt_np_A/", "experiments/EXP-0015/ckpt_np_B/",
+    "experiments/EXP-0015/commit_k100_np_A/", "experiments/EXP-0015/commit_k100_np_B/",
+    "experiments/EXP-0015/results_raw.json"
+  ],
+  "frozen_manifest": "reports/FREEZE_TC27_MANIFEST.json"
+}

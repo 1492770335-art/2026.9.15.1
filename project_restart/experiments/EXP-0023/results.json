@@ -1,0 +1,28 @@
+{
+  "exp_id": "EXP-0023",
+  "name": "TC-34 Gate S2：date0-19 全量重训（9 子模型）+ 提交打包 + 官方工程验收",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "trained_9_models": {
+    "market_y0": {"E": 4, "steps": 18288, "seeds": {"42": "b70d05a0f65c40482bc579049e784127c884328be2c644f2165170a58df2991e", "43": "d2ed35da87f75a8979015a201ef8b3c7cdc9dbcba9b2710861247b633cb316ca", "44": "7a47c9df755f52506d11c213177f01de2e9e01baa703ca6fc1ea0f93fd38bd8b"}},
+    "market_y1": {"E": 2, "steps": 9144, "seeds": {"42": "bc30437994ebc8d85c6636a506a1ed19fb0b42d9794e2685902cde84d61727d5", "43": "8cf5c22cad0c761d05a5142d5a57c0b1a8e4ceba6ecfedacb566079d93423fb5", "44": "1b2268b0dda7f493d8d02ea06d09a5669e65100d43a5417f31748d78523cf4ed"}},
+    "k16_y2": {"E": 2, "steps": 9144, "seeds": {"42": "0d49da2934bcbebb1d230324b01b33e67f8b1d40607645d48e90684308ff813a", "43": "58e32de2763077a9ac5a338259787197ee4a9958ee01c6f6d93f433dc2439645", "44": "75ecf40a8f37d8b23f26902ca03faca44e8d281161802d938d84cfa14cc04ed8"}}
+  },
+  "submission_package": {
+    "release_dir": "project_restart/releases/turing_submission_v1",
+    "zip": "project_restart/releases/turing_submission_v1.zip",
+    "zip_sha256": "6a3fba9931831e1d92e3681f4a67f76d712cab530346e3912b16d6dbe094a4d5",
+    "contents": ["base.py", "network.py", "conf/Model_0.json", "conf/Model_1.json", "conf/Model_2.json", "model/Model_0.pth", "model/Model_1.pth", "model/Model_2.pth", "description.md", "manifest.json"]
+  },
+  "acceptance": {
+    "official_evaluator_from_independent_copy": true,
+    "full_20day_insample": {"c0": 0.5198, "c1": 0.4435, "c2": 0.3092, "score": 0.3916},
+    "note": "20 日全参与训练，分数为 IN_SAMPLE_ENGINEERING_DIAGNOSTIC，非 OOS",
+    "per_day_latency_sec_range": "18.6-25.3",
+    "full_20day_runtime_sec": 394.0,
+    "torch_allocated_mb": 213.6, "torch_reserved_mb": 228.6, "nvidia_smi": "403/6144 MB"
+  },
+  "training_resources": {"total_elapsed_sec": 2896.5, "peak_vram_allocated_mb": 387.6, "peak_vram_reserved_mb": 572.5},
+  "verdict": "READY_FOR_USER_SUBMISSION（工件已冻结、打包、官方全程验收通过；未上传平台）",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

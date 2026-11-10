@@ -1,0 +1,15 @@
+{
+  "exp_id": "EXP-0017",
+  "checks": {
+    "paired_same_protocol": true,
+    "each_seed_K_target_independent_E": true,
+    "outer_val_eval_only": true,
+    "train_eval_bugfix": true,
+    "official_evaluator_used": true,
+    "batched_streaming_consistent": true,
+    "no_K64_no_extra_windows": true,
+    "no_other_experiments": true,
+    "frozen_artifacts_untouched": true
+  },
+  "notes": "旧 EXP-0006 seed43/44 K100 为旧协议，未用作配对对照；本批 K100 为新协议独立重训。seed44 K100 A 的 y2 内层选 E=4 但外层 c2=0.0521（内层→外层转移噪声大），体现 y2 早停不稳定；K16 的 y2 在每种子上均大幅优于 K100。"
+}

@@ -1,0 +1,28 @@
+{
+  "exp_id": "EXP-0005",
+  "status": "completed",
+  "foldA": {
+    "train_dates": [0,1,2,3,4,5,6,7],
+    "val_dates": [8,9,10,11],
+    "pooled_official": {"corr0": 0.4518, "corr1": 0.285, "corr2": 0.0938, "score": 0.2228},
+    "daily": {"8": 0.2107, "9": 0.2117, "10": 0.2309, "11": 0.2372},
+    "best_epochs": {"y0": 6, "y1": 2, "y2": 2}
+  },
+  "foldB": {
+    "train_dates": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "val_dates": [12,13,14,15],
+    "pooled_official": {"corr0": 0.4473, "corr1": 0.2847, "corr2": 0.1564, "score": 0.2531},
+    "daily": {"12": 0.2529, "13": 0.2569, "14": 0.2498, "15": 0.2668},
+    "best_epochs": {"y0": 6, "y1": 2, "y2": 2}
+  },
+  "comparison_vs_strong_mlp": {
+    "foldA": {"gru": 0.2228, "mlp": 0.2163, "delta": 0.0065},
+    "foldB": {"gru": 0.2531, "mlp": 0.2319, "delta": 0.0212},
+    "c0_foldA": {"gru": 0.4518, "mlp": 0.4042},
+    "note": "GRU 双折领先：时序因果窗口是当前最有效的信号结构；GRU 成为 P1 消融宿主模型"
+  },
+  "y2_observation": "y2 两折均在 epoch 2 早停；foldA c2=0.0938 甚至低于 strong-MLP 0.1209 —— y2 过拟合最早且不稳定，验证 EXP-0010（Pearson 混合损失）动机",
+  "resources": {"elapsed_sec": {"foldA": 5707, "foldB": 8750}, "peak_vram_mb": 4133.1},
+  "artifacts": ["experiments/EXP-0005/commit_grustrong_foldA/", "experiments/EXP-0005/commit_grustrong_foldB/", "experiments/EXP-0005/results_raw.json"],
+  "script_sha256": "gru_strong.py（窗口参数化版）"
+}

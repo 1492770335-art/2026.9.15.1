@@ -1,0 +1,15 @@
+{
+  "exp_id": "EXP-0019",
+  "checks": {
+    "m0_legality_audit_pass": true,
+    "offline_online_consistency_pass": true,
+    "single_variable_market_only": true,
+    "new_inner_earlystop_protocol": true,
+    "outer_val_eval_only": true,
+    "official_evaluator_used": true,
+    "no_category_no_other_seed_no_dualhead": true,
+    "frozen_artifacts_untouched": true,
+    "external_thesis_processes_untouched": true
+  },
+  "notes": "市场统计仅用当前 tick 特征（mean/std ddof=1，无未来/标签）；离线(训练)与在线(提交)公式单测逐元素一致；K=16/GRU128 等超参与对照一致。"
+}

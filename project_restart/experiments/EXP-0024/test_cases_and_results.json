@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "name": "day0 first tick diff==0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "tick2 diff == f(t2)-f(t1)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "tick16 (within day first tick) diff==0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "tick1 code0 diff==50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "tick1 code16 diff==50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "window oldest-tick diff not re-zeroed (17-tick history)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "output dim == 183",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw dims preserved (cols 0..99 == X)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "day1 first tick diff==0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "per-stock isolation (code0 diff unaffected by code1 perturb)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "future-info isolation (tick1 diff unaffected by tick2 perturb)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "offline/online alignment (max abs diff <= 1e-6)",
+      "pass": true,
+      "detail": "max_abs=0.0"
+    }
+  ],
+  "all_pass": true
+}

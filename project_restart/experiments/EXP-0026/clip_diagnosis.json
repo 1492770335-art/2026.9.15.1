@@ -1,0 +1,149 @@
+{
+  "continuous_features": "f0..f82 (83 cols, float16 in parquet -> float32)",
+  "folds": {
+    "A": {
+      "inner_train": {
+        "n_rows": 1404400,
+        "mean_abs": 0.6376069188117981,
+        "max_abs": 857.0,
+        "per_feature_max_abs_p99": 770.9000244140625,
+        "abs_quantiles_across_all": {
+          "p50": 0.418701171875,
+          "p99": 3.05078125,
+          "p999": 7.4375,
+          "p9999": 15.671875,
+          "pmax": 857.0
+        },
+        "tail_proportion": {
+          "gt3": 0.010465567768081725,
+          "gt5": 0.002896053024401794,
+          "gt10": 0.0004078404189243445,
+          "gt20": 4.776725815251893e-05
+        },
+        "n_features_max_abs_gt10": 38,
+        "n_features_max_abs_gt20": 34,
+        "mean_mean": 0.006932091433554888,
+        "std_mean": 1.0328081846237183
+      },
+      "inner_stop": {
+        "n_rows": 468200,
+        "mean_abs": 0.6336999535560608,
+        "max_abs": 726.0,
+        "per_feature_max_abs_p99": 350.2349853515625,
+        "abs_quantiles_across_all": {
+          "p50": 0.418701171875,
+          "p99": 2.93359375,
+          "p999": 7.421875,
+          "p9999": 15.421875,
+          "pmax": 726.0
+        },
+        "tail_proportion": {
+          "gt3": 0.009359814310638538,
+          "gt5": 0.002710508844433694,
+          "gt10": 0.0003827527109720385,
+          "gt20": 4.778618961107137e-05
+        },
+        "n_features_max_abs_gt10": 39,
+        "n_features_max_abs_gt20": 36,
+        "mean_mean": -0.0012636350002139807,
+        "std_mean": 1.02009117603302
+      },
+      "outer_val": {
+        "n_rows": 936250,
+        "mean_abs": 0.6248936653137207,
+        "max_abs": 955.0,
+        "per_feature_max_abs_p99": 667.1799926757812,
+        "abs_quantiles_across_all": {
+          "p50": 0.404052734375,
+          "p99": 3.05859375,
+          "p999": 7.16796875,
+          "p9999": 15.0,
+          "pmax": 955.0
+        },
+        "tail_proportion": {
+          "gt3": 0.01047420013833706,
+          "gt5": 0.00267263339070568,
+          "gt10": 0.0003603841266266669,
+          "gt20": 4.0471632859877424e-05
+        },
+        "n_features_max_abs_gt10": 39,
+        "n_features_max_abs_gt20": 35,
+        "mean_mean": -0.008479668758809566,
+        "std_mean": 1.0068838596343994
+      }
+    },
+    "B": {
+      "inner_train": {
+        "n_rows": 2340700,
+        "mean_abs": 0.6374868154525757,
+        "max_abs": 955.0,
+        "per_feature_max_abs_p99": 874.6400146484375,
+        "abs_quantiles_across_all": {
+          "p50": 0.41943359375,
+          "p99": 3.03125,
+          "p999": 7.421875,
+          "p9999": 15.515625,
+          "pmax": 955.0
+        },
+        "tail_proportion": {
+          "gt3": 0.010265778798536736,
+          "gt5": 0.0028187685590913233,
+          "gt10": 0.0003962103808921335,
+          "gt20": 4.651579359691082e-05
+        },
+        "n_features_max_abs_gt10": 39,
+        "n_features_max_abs_gt20": 37,
+        "mean_mean": -0.003001087112352252,
+        "std_mean": 1.0322349071502686
+      },
+      "inner_stop": {
+        "n_rows": 468150,
+        "mean_abs": 0.6088747978210449,
+        "max_abs": 291.25,
+        "per_feature_max_abs_p99": 258.2449951171875,
+        "abs_quantiles_across_all": {
+          "p50": 0.384765625,
+          "p99": 3.05078125,
+          "p999": 6.96484375,
+          "p9999": 14.8671875,
+          "pmax": 291.25
+        },
+        "tail_proportion": {
+          "gt3": 0.010375883540570485,
+          "gt5": 0.0026500876945783776,
+          "gt10": 0.000345991463450727,
+          "gt20": 3.945290936253827e-05
+        },
+        "n_features_max_abs_gt10": 38,
+        "n_features_max_abs_gt20": 33,
+        "mean_mean": 0.017578450962901115,
+        "std_mean": 0.9727433919906616
+      },
+      "outer_val": {
+        "n_rows": 936250,
+        "mean_abs": 0.6399200558662415,
+        "max_abs": 206.875,
+        "per_feature_max_abs_p99": 181.86500549316406,
+        "abs_quantiles_across_all": {
+          "p50": 0.41845703125,
+          "p99": 3.125,
+          "p999": 7.37890625,
+          "p9999": 15.1171875,
+          "pmax": 206.875
+        },
+        "tail_proportion": {
+          "gt3": 0.011080914311451412,
+          "gt5": 0.0029498351215274986,
+          "gt10": 0.0003895700291151254,
+          "gt20": 4.020139302202133e-05
+        },
+        "n_features_max_abs_gt10": 39,
+        "n_features_max_abs_gt20": 33,
+        "mean_mean": -0.01503756083548069,
+        "std_mean": 1.0106991529464722
+      }
+    }
+  },
+  "existing_gradient_clip": 1.0,
+  "note": "input feature clipping (hypothesis) is distinct from gradient clipping=1.0 (already in training)."
+}

@@ -1,0 +1,18 @@
+{
+  "exp_id": "EXP-0028",
+  "checks": {
+    "zero_training": true,
+    "category_values_012_verified": true,
+    "no_missing_or_outside_012": true,
+    "current_encoding_audited": true,
+    "onehot_independent_implementation": true,
+    "offline_online_alignment_pass": true,
+    "onehot_tests_11_11": true,
+    "resource_param_delta_reported": true,
+    "no_embedding_no_diff_clip": true,
+    "frozen_EXP0015_0027_untouched": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  },
+  "notes": "f83-f99 全数据 79.58M 单元严格 ∈{0,1,2}、0 越界、无缺失；稀有状态存在（state2 最低 0.43%、state0 最低 0.6%）但均为合法值。当前为序数数值编码。one-hot 100→134 维（+13056 参数），离线/在线逐元素一致。K1 已预注册，未训练。"
+}

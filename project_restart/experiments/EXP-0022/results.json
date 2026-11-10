@@ -1,0 +1,23 @@
+{
+  "exp_id": "EXP-0022",
+  "name": "TC-33 Gate S0（冻结+20日工程回归）+ Gate S1（0-15 重训→16-19 回顾性前推）",
+  "status": "completed",
+  "actual_model_used": "deepseek-v4-pro（Harness 路由）",
+  "s0": {
+    "freeze_manifest": "reports/FREEZE_S0_MANIFEST.json（24 候选权重 SHA）",
+    "engineering_regression": "20 日官方流式：无 NaN/Inf、每日 reset、有限输出；逐日 21.4-22.9s；峰值显存 allocated 213.6MB/reserved 228.6MB/nvidia-smi 403MB；20 日 in-sample pooled 0.3457（仅诊断）",
+    "scoring": "官方口径 Score=round(0.2·raw_c0+0.3·raw_c1+0.5·raw_c2,4)"
+  },
+  "s1": {
+    "split": {"inner_fit": [0,1,2,3,4,5,6,7,8,9,10,11], "inner_stop": [12,13,14,15], "full_fit": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], "outer_val": [16,17,18,19]},
+    "E_per_target": {"market_y0": {"42": 4, "43": 4, "44": 4}, "market_y1": {"42": 2, "43": 2, "44": 2}, "k16_y2": {"42": 2, "43": 2, "44": 2}},
+    "steps": {"market_y0": 14632, "market_y1": 7316, "k16_y2": 7316},
+    "outer_16_19": {"pooled_official": {"c0": 0.4841, "c1": 0.3380, "c2": 0.1897, "score": 0.2931},
+                    "daily": {"16": 0.3220, "17": 0.2689, "18": 0.2884, "19": 0.2952}}
+  },
+  "declaration": "date16-19 曾在历史研究暴露，本次为回顾性时间前推开发检查，非真正未见隐藏测试",
+  "comparison_note": "16-19 0.2931 与 FoldB 开发分 0.2958（val 12-15）一致；A 折 0.2573 较低",
+  "failure_record": "首次 S1 运行因同时持有 inner+stop+full 三 300 维矩阵 OOM（RAM），已改分阶段加载后完整重跑，结果有效",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556",
+  "artifacts": "EXP-0022/{market_s1_s{42,43,44}_y{0,1}.pth, k16_s1_s{42,43,44}_y2.pth, commit_s1_routing/, s0_engineering_regression.json, results_raw.json}"
+}

@@ -1,0 +1,36 @@
+{
+  "exp_id": "EXP-0001",
+  "status": "completed",
+  "foldA": {
+    "train_dates": [0,1,2,3,4,5,6,7],
+    "val_dates": [8,9,10,11],
+    "lam100_official": {"corr0": 0.344, "corr1": 0.2207, "corr2": 0.1158, "score": 0.1929, "raw_score": 0.1929016987821432},
+    "lam_grid_official": {"1": 0.1926, "10": 0.1926, "100": 0.1929, "1000": 0.1936},
+    "daily_lam100": {"8": 0.1766, "9": 0.1816, "10": 0.2152, "11": 0.2067}
+  },
+  "foldB": {
+    "train_dates": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "val_dates": [12,13,14,15],
+    "lam100_official": {"corr0": 0.3496, "corr1": 0.226, "corr2": 0.1347, "score": 0.2051, "raw_score": 0.20505157346410657},
+    "lam_grid_official": {"1": 0.205, "10": 0.2051, "100": 0.2051, "1000": 0.2049},
+    "daily_lam100": {"12": 0.2057, "13": 0.2085, "14": 0.1948, "15": 0.2292}
+  },
+  "horizon_sensitivity_lam100": {
+    "gap0": {"train": [0,1,2,3,4,5,6,7], "val": [8,9,10,11], "score": 0.1929},
+    "gap1": {"train": [0,1,2,3,4,5,6], "val": [8,9,10,11], "score": 0.1943},
+    "interpretation": "gap1 >= gap0：线性模型无跨日标签泄漏证据；差异 +0.0014 在 4 个验证日的噪声范围内，不作为提升证据"
+  },
+  "verification": {
+    "official_evaluator_foldA_lam100": {"corr0": 0.344, "corr1": 0.2207, "corr2": 0.1158, "score": 0.1929},
+    "match": true,
+    "commit_dir": "experiments/EXP-0001/commit_ridge_foldA_lam100"
+  },
+  "resources": {"elapsed_sec": 64.1, "gpu": "none (numpy closed form)", "notes": "chunked float64 accumulation"},
+  "artifacts": [
+    "experiments/EXP-0001/results_raw.json",
+    "experiments/EXP-0001/foldA_lam100_preds.npy",
+    "experiments/EXP-0001/foldA_lam100_keys.npy",
+    "experiments/EXP-0001/foldA_lam100_y.npy",
+    "experiments/EXP-0001/commit_ridge_foldA_lam100/"
+  ]
+}

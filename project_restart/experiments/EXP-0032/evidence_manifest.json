@@ -1,0 +1,34 @@
+{
+  "exp_id": "EXP-0032",
+  "evidence_manifest": {
+    "data": {"public.parquet": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"},
+    "evaluate_py": "26f7a967b202b4bf9b51d8b160d3b42de116d96082530624638e16067beae6b0",
+    "prediction_sources": {
+      "EXP-0018_K16_3seed_alltarget": {"commit": "commit_ens3_K16_{A,B}", "identity": "同fold外层开发验证（A 8-11 / B 12-15）"},
+      "EXP-0021_Market_routing": {"commit": "commit_3seed_routing_{A,B}", "identity": "同fold外层开发验证（A 8-11 / B 12-15）"},
+      "EXP-0027_clip_y2": {"ckpt": "c1_s42_{A,B}_y2.pth", "identity": "同fold外层开发验证（seed42，HOLD）"},
+      "EXP-0029_onehot_y2": {"ckpt": "k1_s42_{A,B}_y2.pth", "identity": "同fold外层开发验证（seed42，HOLD）"},
+      "EXP-0031_k4k16_y2": {"ckpt": "m1_s42_{A,B}_y2.pth", "identity": "同fold外层开发验证（seed42，HOLD）"}
+    },
+    "identity_labels": {
+      "outer_dev_A": "date 8-11，Fold A 训练截止 0-7",
+      "outer_dev_B": "date 12-15，Fold B 训练截止 0-11",
+      "retrospective_16_19": "EXP-0022 S1（0-15 训练→16-19 评估），未用于本批互补性",
+      "full20_insample": "TC-34 v1 full20，仅工程诊断，未用于本批"
+    },
+    "no_mixing_rule": "不同fold/训练截止/标签定义的预测未混合比较；本批全部逐行同 fold (date,time,code) 对齐"
+  },
+  "training_period_oof": {
+    "exists": false,
+    "note": "当前项目无训练期 cross-fitted OOF 预测；A/B outer 为反复使用开发集，仅回顾性诊断"
+  },
+  "checks": {
+    "zero_training": true,
+    "frozen_inference_only": true,
+    "no_fusion_weight_search": true,
+    "no_outer_label_driven_selection": true,
+    "no_old_project_data": true,
+    "v1_zip_untouched": true,
+    "external_processes_untouched": true
+  }
+}

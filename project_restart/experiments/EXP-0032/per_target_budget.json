@@ -1,0 +1,28 @@
+{
+  "exp_id": "EXP-0032",
+  "name": "TC-44 Gate G0：三目标增量机会与互补性零训练审计",
+  "per_target_raw_corr_and_contribution": {
+    "foldA": {
+      "K16_3seed": {"c0": 0.4563, "c1": 0.2986, "c2": 0.1374, "w0": 0.0913, "w1": 0.0896, "w2": 0.0687, "score": 0.2496},
+      "Market_routing": {"c0": 0.4713, "c1": 0.3144, "c2": 0.1374, "w0": 0.0943, "w1": 0.0943, "w2": 0.0687, "score": 0.2573}
+    },
+    "foldB": {
+      "K16_3seed": {"c0": 0.4488, "c1": 0.2992, "c2": 0.1791, "w0": 0.0898, "w1": 0.0898, "w2": 0.0895, "score": 0.2690},
+      "Market_routing": {"c0": 0.4863, "c1": 0.3635, "c2": 0.1791, "w0": 0.0973, "w1": 0.1091, "w2": 0.0895, "score": 0.2958}
+    }
+  },
+  "per_target_contribution_of_0.01_raw_corr": {"c0": 0.002, "c1": 0.003, "c2": 0.005},
+  "complementarity": {
+    "market_vs_k16": {
+      "y0": {"pred_corr": {"A": 0.952, "B": 0.940}, "market_adds_beyond_k16": {"A": 0.041, "B": 0.092}, "k16_adds_beyond_market": {"A": 0.015, "B": 0.014}},
+      "y1": {"pred_corr": {"A": 0.858, "B": 0.826}, "market_adds_beyond_k16": {"A": 0.051, "B": 0.123}, "k16_adds_beyond_market": {"A": 0.007, "B": -0.003}}
+    },
+    "y2_candidates_vs_k16_3seed": {
+      "clip": {"pred_corr": {"A": 0.953, "B": 0.931}, "corr_with_k16_residual": {"A": -0.094, "B": -0.030}},
+      "onehot": {"pred_corr": {"A": 0.920, "B": 0.873}, "corr_with_k16_residual": {"A": -0.085, "B": -0.035}},
+      "k4k16": {"pred_corr": {"A": 0.935, "B": 0.912}, "corr_with_k16_residual": {"A": -0.087, "B": -0.033}}
+    }
+  },
+  "verdict": "INSUFFICIENT_EVIDENCE / NO_TRAIN（无稳定互补增量信号，缺训练期 cross-fit OOF）",
+  "data_sha256": "e03503ec4d519c043a5b95c4dd6684f25d2636dd00a1d015ba3128b1d7818556"
+}

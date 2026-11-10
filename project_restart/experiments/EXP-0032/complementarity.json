@@ -1,0 +1,82 @@
+{
+  "A": {
+    "k16_3seed_raw_corr": [
+      0.4563432690488964,
+      0.2986370575006246,
+      0.13739284314987754
+    ],
+    "market_routing_raw_corr": [
+      0.4712510199468331,
+      0.3144076993820352,
+      0.13739284314987754
+    ],
+    "k16_3seed_score": 0.2496,
+    "market_routing_score": 0.2573,
+    "complementarity": {
+      "y0": {
+        "pred_corr_market_vs_k16": 0.9517539147951257,
+        "corr_market_pred_with_k16_residual": 0.04141819111782171,
+        "corr_k16_pred_with_market_residual": 0.015269086873675534
+      },
+      "y1": {
+        "pred_corr_market_vs_k16": 0.8575322382951158,
+        "corr_market_pred_with_k16_residual": 0.05109074507416058,
+        "corr_k16_pred_with_market_residual": 0.006531477831507943
+      }
+    },
+    "y2_candidates": {
+      "clip": {
+        "pred_corr_with_k16_3seed_y2": 0.9526811106945797,
+        "corr_with_k16_3seed_residual": -0.0935435047078983
+      },
+      "onehot": {
+        "pred_corr_with_k16_3seed_y2": 0.9197582742587762,
+        "corr_with_k16_3seed_residual": -0.08474817195667839
+      },
+      "k4k16": {
+        "pred_corr_with_k16_3seed_y2": 0.9354374749454045,
+        "corr_with_k16_3seed_residual": -0.08749489233385215
+      }
+    }
+  },
+  "B": {
+    "k16_3seed_raw_corr": [
+      0.4487594812028472,
+      0.299171388851041,
+      0.17905408846966808
+    ],
+    "market_routing_raw_corr": [
+      0.4862526841350107,
+      0.3635342942822069,
+      0.17905408846966808
+    ],
+    "k16_3seed_score": 0.269,
+    "market_routing_score": 0.2958,
+    "complementarity": {
+      "y0": {
+        "pred_corr_market_vs_k16": 0.940486266292468,
+        "corr_market_pred_with_k16_residual": 0.09161288302814694,
+        "corr_k16_pred_with_market_residual": 0.014195516932658468
+      },
+      "y1": {
+        "pred_corr_market_vs_k16": 0.8256975022949845,
+        "corr_market_pred_with_k16_residual": 0.1230907388166369,
+        "corr_k16_pred_with_market_residual": -0.002954083439785278
+      }
+    },
+    "y2_candidates": {
+      "clip": {
+        "pred_corr_with_k16_3seed_y2": 0.9311722972557418,
+        "corr_with_k16_3seed_residual": -0.030341164028902644
+      },
+      "onehot": {
+        "pred_corr_with_k16_3seed_y2": 0.872919175698088,
+        "corr_with_k16_3seed_residual": -0.03522496994241529
+      },
+      "k4k16": {
+        "pred_corr_with_k16_3seed_y2": 0.9124967785004301,
+        "corr_with_k16_3seed_residual": -0.03298207785613948
+      }
+    }
+  }
+}

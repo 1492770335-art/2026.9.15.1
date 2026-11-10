@@ -1,0 +1,16 @@
+{
+  "exp_id": "EXP-0015",
+  "checks": {
+    "inner_epoch_selection_no_outer_val": true,
+    "outer_val_used_once_for_eval_only": true,
+    "identical_structure_hparams_to_EXP0005": true,
+    "seed42": true,
+    "deterministic_retrain_rng_seed_epoch": true,
+    "official_evaluator_used": true,
+    "batched_streaming_consistent": true,
+    "frozen_artifacts_untouched": true,
+    "no_K16_K64_trained": true,
+    "no_other_experiments_started": true
+  },
+  "notes": "内层 stop_i（A:6-7、B:10-11）仅用于选 epoch，外层 val（A:8-11、B:12-15）仅最终评估一次；每目标 E 独立记录；phase2 用同 seed 同 rng 重训 E epoch。冻结清单 FREEZE_TC27_MANIFEST.json（184 文件 SHA）覆盖 EXP-0005/0006/0006C。"
+}
