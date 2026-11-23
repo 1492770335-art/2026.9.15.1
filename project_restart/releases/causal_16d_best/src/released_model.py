@@ -9,7 +9,7 @@ import experiment_peer_implied_tail_v1 as peer
 import experiment_replicated_expert_consensus_v1 as experts
 import experiment_periodic_book_response_v1 as clock
 from experiment_periodic_near_carry_v1 import carry
-import experiment_periodic_response_strength_v1 as calibration
+import experiment_phase_conditioned_forecasts_v1 as calibration
 import experiment_seasonal_pressure_surprises_v1 as seasonal
 import replay_session_experts_16d as session
 
