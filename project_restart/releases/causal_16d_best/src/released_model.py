@@ -9,6 +9,7 @@ import experiment_peer_implied_tail_v1 as peer
 import experiment_replicated_expert_consensus_v1 as experts
 import experiment_periodic_book_response_v1 as clock
 from experiment_periodic_near_carry_v1 import carry
+import experiment_periodic_response_strength_v1 as calibration
 import experiment_seasonal_pressure_surprises_v1 as seasonal
 import replay_session_experts_16d as session
 
@@ -31,7 +32,7 @@ class SessionRefinement:
             self.clock_weights = state['m'], state['r']
             self.phase_shift = int(state['shift'])
             self.mask = state['keep']
-
+        self.calibrate = calibration.layer()
 
     def predict(self, raw, base, opening):
         p = self.session(raw, base, opening)
@@ -44,4 +45,4 @@ class SessionRefinement:
         parent = seasonal.apply(calibrated, seasonal.features(raw, calibrated, self.profile, True), self.flow)
         fixed = self.final(raw, parent)
         terms = clock.changes(raw, np.arange(len(raw)), self.phase_shift, self.clock_weights)
-        return carry(fixed, terms, self.mask)
+        return self.calibrate(raw, carry(fixed, terms, self.mask))
