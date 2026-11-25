@@ -25,8 +25,9 @@ def features(path,d):
     return frame.select(FIELDS).to_numpy().astype(np.float16).reshape(-1,50,100)
 
 
-def original(scratch):
-    sys.path.insert(0,str(ROOT/'2026.9.15.1/project_restart/releases/causal_16d/src'))
+def original(scratch, base_source=None):
+    source = base_source or ROOT/'2026.9.15.1/project_restart/releases/causal_16d/src'
+    sys.path.insert(0, str(source))
     sys.path.insert(1,str(ROOT/'.deps/tree_models'))
     from predictor import Predictor
     from replay_curve_quantile_market_v1 import opening

@@ -56,7 +56,7 @@ def labels(day):
     return pl.scan_parquet(original.DATA).filter(pl.col('date')==day).sort('time','code').select('y0','y1','y2').collect().to_numpy()
 
 
-def evaluate(layer):
+def evaluate(layer, on_day=None):
     rows=[];daily={}
     ref=json.loads((parent.OUT/'reload_verification.json').read_text())
     for day in range(16,20):
@@ -72,6 +72,8 @@ def evaluate(layer):
         s=measure([row])
         assert abs(s['baseline_score']-ref['daily'][str(day+1)]['score'])<2e-9
         daily[str(day+1)]={'score':s['score'],'gain':s['gain'],'prefix_error':err}
+        if on_day is not None:
+            on_day(day,raw,q,h)
         rows.append(row)
     s=measure(rows)
     np.testing.assert_allclose(s['base'],ref['pooled']['candidate'],atol=2e-9,rtol=0)
