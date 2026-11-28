@@ -1,0 +1,22 @@
+"""Chronological correction stages and selections from the training period."""
+LAYERS = [
+    ('experiment_dense_market_covariance_signature_v1', 'prepare_dense_market_covariance_signature_reference_v1', 'dense_market_covariance_signature_verified_reference_v1', {'2': 'delayed_common_price_moves'}),
+    ('experiment_dense_market_unpriced_covariance_v1', 'prepare_dense_market_unpriced_reference_v1', 'dense_market_unpriced_verified_reference_v1', {'2': 'unexplained_persistence'}),
+    ('experiment_dense_disjoint_settled_error_transfer_v1', 'prepare_dense_disjoint_settled_error_reference_v1', 'dense_disjoint_settled_error_verified_reference_v1', {'1': 'two_donor_panel_mean'}),
+    ('experiment_dense_analogue_block_payoff_v1', 'prepare_dense_analogue_block_reference_v1', 'dense_analogue_block_verified_reference_v1', {'1': 'extra_lag_state_information'}),
+    ('experiment_dense_conditional_price_age_v1', 'prepare_dense_conditional_price_age_reference_v1', 'dense_conditional_price_age_verified_reference_v1', {'1': 'unexpected_wait_and_peer_move'}),
+    ('experiment_dense_conditional_book_kernel_v1', 'prepare_dense_conditional_book_kernel_reference_v1', 'dense_conditional_book_kernel_verified_reference_v1', {'1': 'shared_across_dates'}),
+    ('experiment_dense_multitaper_common_surprises_v1', 'prepare_dense_multitaper_surprise_reference_v1', 'dense_multitaper_surprise_verified_reference_v1', {'1': 'covariance_beyond_short_taper'}),
+    ('experiment_dense_spectral_forward_cash_v1', 'prepare_dense_spectral_forward_cash_reference_v1', 'dense_spectral_forward_cash_verified_reference_v1', {'2': 'unexplained_tail_risk'}),
+    ('experiment_dense_timing_covariance_budget_v1', 'prepare_dense_timing_budget_reference_v1', 'dense_timing_budget_verified_reference_v1', {'2': 'bounded_covariance_per_issue'}),
+    ('experiment_dense_horizon_graph_filter_v1', 'prepare_dense_horizon_graph_reference_v1', 'dense_horizon_graph_verified_reference_v1', {'1': 'unconditional_risk_modes'}),
+    ('experiment_dense_receiver_priced_book_links_v1', 'prepare_dense_receiver_priced_links_reference_v1', 'dense_receiver_priced_links_verified_reference_v1', {'1': 'price_before_graph_selection'}),
+    ('experiment_dense_revisited_price_pressure_v1', 'prepare_dense_revisited_pressure_reference_v1', 'dense_revisited_pressure_verified_reference_v1', {'1': 'after_price_excursion'}),
+    ('experiment_dense_price_ladder_walk_v1', 'prepare_dense_price_ladder_reference_v1', 'dense_price_ladder_verified_reference_v1', {'1': 'level_given_arrival'}),
+    ('experiment_dense_jump_reward_ladder_v1', 'prepare_dense_jump_reward_ladder_reference_v1', 'dense_jump_reward_ladder_verified_reference_v1', {'2': 'excess_jump'}),
+    ('experiment_dense_staggered_book_events_v1', 'prepare_dense_staggered_book_events_reference_v1', 'dense_staggered_book_events_verified_reference_v1', {'2': 'state_matched_peers'}),
+    ('experiment_dense_price_visit_gru_v1', 'prepare_dense_price_visit_gru_reference_v1', 'dense_price_visit_gru_verified_reference_v1', {'1': 'previous_visits_increment'}),
+    ('experiment_dense_peer_crossing_clock_v1', 'prepare_dense_peer_crossing_clock_reference_v1', 'dense_peer_crossing_clock_verified_reference_v1', {'1': 'both_identity_and_order'}),
+    ('experiment_dense_settled_pearson_tail_v1', 'prepare_dense_settled_pearson_tail_reference_v1', 'dense_settled_pearson_tail_verified_reference_v1', {'2': 'cumulative_positive'}),
+    ('experiment_dense_replica_innovation_labels_v1', 'prepare_dense_replica_innovation_reference_v1', 'dense_replica_innovation_verified_reference_v1', {'2': 'replicated_clean_gradient'}),
+]
